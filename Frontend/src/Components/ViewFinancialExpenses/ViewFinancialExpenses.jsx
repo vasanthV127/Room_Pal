@@ -34,7 +34,7 @@ const ViewFinancialExpenses = () => {
       try {
         // Fetch personal expenses only
         const personalResponse = await axios.get(
-          `http://localhost:8080/api/expenses/personal?userId=${userId}&roomId=${roomId}`
+          `http://192.168.137.1:8080/api/expenses/personal?userId=${userId}&roomId=${roomId}`
         );
         setPersonalExpenses(personalResponse.data);
         setLoading(false);

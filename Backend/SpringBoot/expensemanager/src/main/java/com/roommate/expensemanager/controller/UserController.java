@@ -1,7 +1,9 @@
 package com.roommate.expensemanager.controller;
 
 import com.roommate.expensemanager.dto.UserDto;
+import com.roommate.expensemanager.repository.UserRepository;
 import com.roommate.expensemanager.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,6 +14,9 @@ import java.util.Map;
 public class UserController {
     private final UserService userService;
 
+    @Autowired
+    UserRepository userRepository;
+
     public UserController(UserService userService) {
         this.userService = userService;
     }
@@ -19,6 +24,16 @@ public class UserController {
     @PostMapping
     public ResponseEntity<UserDto> createUser(@RequestBody UserDto userDto) {
         return ResponseEntity.ok(userService.createUser(userDto));
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<UserDto> getUserById(@PathVariable Long id) {
+        return ResponseEntity.ok(
+                UserDto.fromEntity(
+                        userRepository.findById(id)
+                                .orElseThrow(() -> new IllegalArgumentException("User not found"))
+                )
+        );
     }
 
     @PostMapping("/login")

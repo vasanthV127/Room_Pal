@@ -14,7 +14,7 @@ function LoginPage() {
     try {
       console.log(email);
       console.log(password);
-      const response = await fetch("http://localhost:8080/api/users/login", {
+      const response = await fetch("http://192.168.137.1:8080/api/users/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
