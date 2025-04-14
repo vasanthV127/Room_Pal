@@ -1,0 +1,170 @@
+#loginbox-col {
+  width: 500px;
+}
+@media (max-width: 425px) {
+  #loginbox-col {
+    width: 325px;
+  }
+}
+#loginbox-col #login-text {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 10%,
+    rgba(9, 9, 117, 1) 44%,
+    rgba(9, 9, 121, 1) 55%,
+    rgba(8, 39, 141, 1) 72%,
+    rgba(7, 62, 156, 1) 78%,
+    rgba(6, 82, 169, 1) 86%,
+    rgba(2, 160, 221, 1) 98%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#loginbox-col #or {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+}
+#loginbox-col a img {
+  width: 50px;
+  height: 50px;
+}
+#loginbox-col #f-pass {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  text-decoration: underline black;
+  color: black;
+}
+#loginbox-col #f-pass:hover {
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 10%,
+    rgba(9, 9, 117, 1) 44%,
+    rgba(9, 9, 121, 1) 55%,
+    rgba(8, 39, 141, 1) 72%,
+    rgba(7, 62, 156, 1) 78%,
+    rgba(6, 82, 169, 1) 86%,
+    rgba(2, 160, 221, 1) 98%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: underline black;
+}
+#loginbox-col #New-User {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+}
+#loginbox-col #New-User a {
+  text-decoration: none;
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 10%,
+    rgba(9, 9, 117, 1) 44%,
+    rgba(9, 9, 121, 1) 55%,
+    rgba(8, 39, 141, 1) 72%,
+    rgba(7, 62, 156, 1) 78%,
+    rgba(6, 82, 169, 1) 86%,
+    rgba(2, 160, 221, 1) 98%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.form-control:focus {
+  border-color: rgba(9, 9, 117, 1) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  background-color: transparent !important;
+  box-shadow: 0 0 0 1000px white inset !important;
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+/* #email-Input label {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  #pass-Input label {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+#loginbox-col #login-button {
+  padding: 5px 15px 5px 15px;
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-size: 15px;
+  font-style: normal;
+  background-color: white;
+  color: black;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+}
+#loginbox-col #login-button:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 100px;
+}
+
+#loginbox-col #login-button:active {
+  color: white;
+}
+
+#loginbox-col #login-button:active:after {
+  background: transparent;
+}
+
+#loginbox-col #login-button:hover:before {
+  opacity: 1;
+}
+
+#loginbox-col #login-button:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  left: 0;
+  top: 0;
+  border-radius: 100px;
+}
