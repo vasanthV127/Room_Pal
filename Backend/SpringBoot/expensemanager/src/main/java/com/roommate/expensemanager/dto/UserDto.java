@@ -89,6 +89,7 @@ public class UserDto {
         dto.setFullName(user.getFullName());
         dto.setProfilePicture(user.getProfilePicture());
         dto.setCreatedAt(user.getCreatedAt());
+        dto.setPassword(user.getPassword());
         if (user.getRooms() != null) {
             dto.setRoomIds(user.getRooms().stream().map(Room::getId).toList());
         }

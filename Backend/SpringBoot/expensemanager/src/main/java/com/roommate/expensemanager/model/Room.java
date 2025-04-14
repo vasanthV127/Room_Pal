@@ -32,6 +32,25 @@ public class Room {
     @ManyToMany(mappedBy = "rooms")
     private List<User> members = new ArrayList<>();
 
+    @ManyToMany(mappedBy = "rooms")
+    private List<User> users = new ArrayList<>();
+
+    public Boolean getActive() {
+        return isActive;
+    }
+
+    public void setActive(Boolean active) {
+        isActive = active;
+    }
+
+    public List<User> getUsers() {
+        return users;
+    }
+
+    public void setUsers(List<User> users) {
+        this.users = users;
+    }
+
     @OneToMany(mappedBy = "room")
     private List<Bill> bills = new ArrayList<>();
 

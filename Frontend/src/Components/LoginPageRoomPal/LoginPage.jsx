@@ -12,6 +12,8 @@ function LoginPage() {
 
   const handleLogin = async () => {
     try {
+      console.log(email);
+      console.log(password);
       const response = await fetch("http://localhost:8080/api/users/login", {
         method: "POST",
         headers: {
