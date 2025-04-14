@@ -4,4 +4,5 @@ import com.roommate.expensemanager.dto.UserDto;
 
 public interface UserService {
     UserDto createUser(UserDto userDto);
+    UserDto findByEmail(String email);
 }
