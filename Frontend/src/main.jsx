@@ -6,12 +6,8 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
-<<<<<<< HEAD
     {/* <LoginMain></LoginMain> */}
     {/* <RegisterMain></RegisterMain> */}
   </React.StrictMode>
 );
-=======
-  </React.StrictMode>,
-)
->>>>>>> e76f71c39ce540b30742aff25d403464635893f5
+
