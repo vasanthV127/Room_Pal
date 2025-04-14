@@ -1,12 +1,64 @@
-/* Sidebar styles */
-.sidebar {
-    width: 300px;
+/* Dashboard container */
+.dashboard-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  /* Toggle button */
+  .sidebar-toggle {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1100;
+    width: 40px;
+    height: 40px;
+    background-color: #b5915f;
+    border-radius: 50%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar-toggle:hover {
+    background-color: #a07e4f;
+  }
+  
+  /* Sidebar overlay */
+  .sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    cursor: pointer;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Start off-screen */
+    height: 100vh;
+    width: 80%; /* Takes 80% of horizontal space when open */
+    max-width: 350px;
     background-color: #f8ede3;
     border-right: 1px solid #e0d4c3;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1050;
+    transition: left 0.3s ease;
+  }
+  
+  .sidebar.open {
+    left: 0; /* Slide in from left */
   }
   
   .sidebar-header {
@@ -48,7 +100,6 @@
     left: 10px;
     transform: translateY(-50%);
     color: #b5915f;
-    font-size: 18px;
   }
   
   .menu-title {
@@ -89,11 +140,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 35px;
   }
   
   .menu-item span {
     flex: 1;
     color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
   .chevron {
@@ -143,11 +198,68 @@
     cursor: pointer;
   }
   
-  @media (max-width: 768px) {
+  /* Content area - adjust based on sidebar state */
+  .content-area {
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
     .sidebar {
-      width: 100%;
-      height: auto;
-      border-right: none;
-      border-bottom: 1px solid #e0d4c3;
+      width: 100%; /* Full width on very small screens */
+      max-width: none;
+    }
+  }
+  
+  /* Medium screens - adjust content when sidebar opens */
+  @media (max-width: 991px) {
+    .sidebar.open ~ .content-area {
+      margin-left: 0;
+      opacity: 0.3; /* Optional: dim the content when sidebar is open */
+    }
+  }
+  
+  /* Desktop adjustments */
+  @media (min-width: 992px) {
+    .sidebar-toggle {
+      display: none;
+    }
+    
+    .sidebar {
+      left: 0 !important;
+      width: 300px;
+      transition: none;
+      position: fixed;
+    }
+  
+    .sidebar-overlay {
+      display: none !important;
+    }
+  
+    .content-area {
+      margin-left: 300px; /* So content doesn't go under sidebar */
+      width: calc(100% - 300px); /* Ensure content width accounts for sidebar */
+    }
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+
+  @media (max-width: 991px) {
+    .sidebar {
+      z-index: 1050;
+    }
+  
+    .sidebar-overlay {
+      z-index: 1000;
+    }
+  
+    .content-area {
+      z-index: 1;
     }
   }

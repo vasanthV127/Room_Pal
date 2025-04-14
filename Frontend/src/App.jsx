@@ -31,9 +31,7 @@ function App() {
   return (
     <div className="dashboard-container">
       <Dashboard activeView={activeView} setActiveView={setActiveView} />
-      <div className="main-content">
-        {renderContent()}
-      </div>
+      {}
     </div>
   );
 }
