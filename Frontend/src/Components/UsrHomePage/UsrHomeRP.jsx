@@ -3,7 +3,7 @@ import "./UsrHomeRP.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import NotificationsRoundedIcon from "@mui/icons-material/NotificationsRounded";
+import NotificationsNoneRoundedIcon from "@mui/icons-material/NotificationsNoneRounded";
 import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
 import ViewFinancialExpenses from "../ViewFinancialExpenses/ViewFinancialExpenses";
 import ManageFinance from "../ManageFinance/ManageFinance";
@@ -33,7 +33,7 @@ function UsrHomeRP() {
             className="col-6  d-flex justify-content-end align-items-center  pe-md-5"
           >
             <a id="UsrHome-Notifications-Icon" href="#">
-              <NotificationsRoundedIcon
+              <NotificationsNoneRoundedIcon
                 style={{ fontSize: 25, color: "black" }}
               />
             </a>

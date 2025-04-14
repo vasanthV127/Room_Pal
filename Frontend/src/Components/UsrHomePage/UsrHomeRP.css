@@ -3,6 +3,9 @@
 }
 #UsrHome-Col-1 {
   color: black;
+  background: linear-gradient(135deg, #ff4e00, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: "Montserrat", serif;
   font-weight: 500;
   font-style: normal;
@@ -16,6 +19,8 @@
   height: 70px;
 }
 #UsrHome-NavBar-Col {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 #UsrHome-NavBar-Options {
 }
@@ -23,9 +28,17 @@
   color: black;
   text-decoration: none;
   font-family: "Poppins", serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 15px;
   font-style: normal;
+  background-color: white;
+  padding: 5px 15px;
+  border-radius: 8px;
+  transition: all 1s ease-out;
+}
+#UsrHome-NavBar-Options a:hover {
+  background-color: #424b54;
+  color: white;
 }
 #mobileHamburgerBtn {
   background-color: white;
@@ -34,6 +47,6 @@
 #offcanvasRightLabel {
   font-family: "Poppins", serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 30px;
   font-style: normal;
 }
