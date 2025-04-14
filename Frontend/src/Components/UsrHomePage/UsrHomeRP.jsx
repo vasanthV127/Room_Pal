@@ -11,10 +11,10 @@ import AccessComunityForum from "../AccessComunityForum/AccessComunityForum";
 import UploadBills from "../UploadBills/UploadBills";
 import ManageTasks from "../ManageTasks/ManageTasks";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 
 function UsrHomeRP() {
   const [activePage, setActivePage] = useState("View Financial Expenses");
-
   const handleOptionClick = (page) => {
     setActivePage(page);
   };
@@ -155,6 +155,37 @@ function UsrHomeRP() {
             {activePage === "Profile" && <h1>Profile Page</h1>}
           </div>
         </div>
+      </div>
+      <div className="container-fluid">
+        <footer>
+          <div id="usrhome-footer-row" className="row">
+            {/*...FOR DESKTOP's AND LAPTOP's AND TAB's*/}
+            <div
+              id="usrhome-footer-col-1"
+              className="col-4 d-flex justify-content-start align-items-center  ps-md-5"
+            >
+              <a>Support</a>
+            </div>
+            <div
+              id="usrhome-footer-col-2"
+              className="col-4 text-center d-flex justify-content-center align-items-center"
+            >
+              <a>
+                <FontAwesomeIcon
+                  icon={faCopyright}
+                  style={{ color: "#ff4e00" }}
+                />
+                &nbsp;2024 ROOM PAL. All rights reserved.
+              </a>
+            </div>
+            <div
+              id="usrhome-footer-col-3"
+              className="col-4 d-flex justify-content-end align-items-center  pe-md-5"
+            >
+              <a href="#">Privacy Policy</a>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   );

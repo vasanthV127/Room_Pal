@@ -50,3 +50,74 @@
   font-size: 30px;
   font-style: normal;
 }
+#usrhome-footer-row {
+  height: 30px;
+}
+#usrhome-footer-col-1 a {
+  cursor: pointer;
+
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 11.5px;
+  text-decoration: none;
+  /* background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 10%,
+    rgba(9, 9, 117, 1) 44%,
+    rgba(9, 9, 121, 1) 55%,
+    rgba(8, 39, 141, 1) 72%,
+    rgba(7, 62, 156, 1) 78%,
+    rgba(6, 82, 169, 1) 86%,
+    rgba(2, 160, 221, 1) 98%,
+    rgba(0, 212, 255, 1) 100%
+  ); */
+  background: #ff4e00;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#usrhome-footer-col-2 a {
+  cursor: pointer;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 11.5px;
+  text-decoration: none;
+  /* background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 10%,
+    rgba(9, 9, 117, 1) 44%,
+    rgba(9, 9, 121, 1) 55%,
+    rgba(8, 39, 141, 1) 72%,
+    rgba(7, 62, 156, 1) 78%,
+    rgba(6, 82, 169, 1) 86%,
+    rgba(2, 160, 221, 1) 98%,
+    rgba(0, 212, 255, 1) 100%
+  ); */
+  background: #ff4e00;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#usrhome-footer-col-3 a {
+  cursor: pointer;
+
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 11.5px;
+  text-decoration: none;
+  /* background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 10%,
+    rgba(9, 9, 117, 1) 44%,
+    rgba(9, 9, 121, 1) 55%,
+    rgba(8, 39, 141, 1) 72%,
+    rgba(7, 62, 156, 1) 78%,
+    rgba(6, 82, 169, 1) 86%,
+    rgba(2, 160, 221, 1) 98%,
+    rgba(0, 212, 255, 1) 100%
+  ); */
+  background: #ff4e00;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

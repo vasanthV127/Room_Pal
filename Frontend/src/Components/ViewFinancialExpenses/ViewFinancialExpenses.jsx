@@ -7,7 +7,10 @@ const ViewFinancialExpenses = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+
   const userId = localStorage.getItem('userId') // e.g., "2" for Purushoth
+
+ 
   const roomId = 1; // Room ID 1 (Flat 101)
 
   const getCategory = (productName) => {
@@ -62,10 +65,11 @@ const ViewFinancialExpenses = () => {
 
   return (
     <div className="expenses-list">
-      <h2 id="ViewFinanceTitle"> Personal Expenses</h2>
+      <h2 id="ViewFinanceTitle" className="ps-md-4">
+        {" "}
+        Personal Expenses
+      </h2>
 
-      {/* Personal Expenses */}
-      
       {personalExpenses.length === 0 ? (
         <p>No self-buy expenses found.</p>
       ) : (
