@@ -10,7 +10,7 @@
   font-style: normal;
   font-size: 22px;
   letter-spacing: 1.5px;
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle,
     rgba(2, 0, 36, 1) 10%,
     rgba(9, 9, 117, 1) 44%,
@@ -20,7 +20,8 @@
     rgba(6, 82, 169, 1) 86%,
     rgba(2, 160, 221, 1) 98%,
     rgba(0, 212, 255, 1) 100%
-  );
+  ); */
+  background: linear-gradient(135deg, #ff4e00, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -47,7 +48,7 @@
   font-style: normal;
   font-size: 11.5px;
   text-decoration: none;
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle,
     rgba(2, 0, 36, 1) 10%,
     rgba(9, 9, 117, 1) 44%,
@@ -57,7 +58,8 @@
     rgba(6, 82, 169, 1) 86%,
     rgba(2, 160, 221, 1) 98%,
     rgba(0, 212, 255, 1) 100%
-  );
+  ); */
+  background: #ff4e00;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -68,7 +70,7 @@
   font-style: normal;
   font-size: 11.5px;
   text-decoration: none;
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle,
     rgba(2, 0, 36, 1) 10%,
     rgba(9, 9, 117, 1) 44%,
@@ -78,7 +80,8 @@
     rgba(6, 82, 169, 1) 86%,
     rgba(2, 160, 221, 1) 98%,
     rgba(0, 212, 255, 1) 100%
-  );
+  ); */
+  background: #ff4e00;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -90,7 +93,7 @@
   font-style: normal;
   font-size: 11.5px;
   text-decoration: none;
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle,
     rgba(2, 0, 36, 1) 10%,
     rgba(9, 9, 117, 1) 44%,
@@ -100,7 +103,8 @@
     rgba(6, 82, 169, 1) 86%,
     rgba(2, 160, 221, 1) 98%,
     rgba(0, 212, 255, 1) 100%
-  );
+  ); */
+  background: #ff4e00;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

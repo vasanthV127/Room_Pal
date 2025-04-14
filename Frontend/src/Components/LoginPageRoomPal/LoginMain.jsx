@@ -50,7 +50,7 @@ function LoginMain() {
               <a>
                 <FontAwesomeIcon
                   icon={faCopyright}
-                  style={{ color: "rgba(9, 9, 117, 1)" }}
+                  style={{ color: "#ff4e00" }}
                 />
                 &nbsp;2024 ROOM PAL. All rights reserved.
               </a>
