@@ -6,6 +6,7 @@
     background-color: #f8ede3;
     border-right: 1px solid #e0d4c3;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+    height: 100vh;
   }
   
   .sidebar-header {
@@ -29,15 +30,25 @@
   
   .search-bar {
     flex: 1;
+    position: relative;
   }
   
   .search-bar input {
     width: 100%;
-    padding: 8px 12px;
+    padding: 8px 12px 8px 35px;
     border-radius: 15px;
     border: 1px solid #e0d4c3;
     background-color: #f0e5d8;
     outline: none;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #b5915f;
+    font-size: 18px;
   }
   
   .menu-title {
@@ -71,13 +82,25 @@
   }
   
   .menu-icon {
-    width: 30px;
-    height: 30px;
-    background-color: #b5915f;
+    margin-right: 12px;
+    color: white;
+    padding: 8px;
     border-radius: 50%;
-    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
+  .menu-item span {
+    flex: 1;
+    color: #333;
+  }
+  
+  .chevron {
+    color: #b5915f;
+  }
+  
+  /* Color overrides for each section */
   .expense-icon {
     background-color: #e69b76;
   }
@@ -98,15 +121,6 @@
     background-color: #baa689;
   }
   
-  .menu-item span {
-    flex: 1;
-    color: #333;
-  }
-  
-  .chevron {
-    color: #b5915f;
-  }
-  
   .sidebar-footer {
     padding: 15px;
     border-top: 1px solid #e0d4c3;
@@ -120,7 +134,11 @@
   .footer-icon {
     width: 40px;
     height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #b5915f;
+    color: white;
     border-radius: 50%;
     cursor: pointer;
   }
