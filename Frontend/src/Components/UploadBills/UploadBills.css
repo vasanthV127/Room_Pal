@@ -1,0 +1,75 @@
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  h3 {
+    margin: 15px 0;
+    color: #444;
+    font-size: 18px;
+  }
+  
+  .upload-container {
+    padding: 10px;
+  }
+  
+  .upload-area {
+    background-color: #f8f8f8;
+    border: 2px dashed #e0d4c3;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .upload-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #d1a38e;
+    border-radius: 50%;
+
+  }
+  
+  .upload-area p {
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .browse-btn {
+    background-color: #b5915f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+  
+  .bill-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #e0d4c3;
+  }
+  
+  .bill-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #7ea3cc;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .bill-details {
+    flex: 1;
+  }
+  
+  .bill-name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .bill-amount {
+    color: #777;
+    font-size: 14px;
+  }
