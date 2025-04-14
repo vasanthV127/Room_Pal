@@ -28,6 +28,7 @@ function LoginPage() {
       }
 
       const data = await response.json();
+      localStorage.setItem("userId", data.userId.toString()); // Store userId
       localStorage.setItem("username", data.username); // Store username
       setError("");
       navigate("/dashboard"); // Redirect to dashboard

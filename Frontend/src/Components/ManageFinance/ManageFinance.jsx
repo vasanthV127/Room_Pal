@@ -9,7 +9,7 @@ const ManageFinance = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const userId = 4; // e.g., "2" for Purushoth
+  const userId =  localStorage.getItem('userId'); // e.g., "2" for Purushoth
   const roomId = 1; // Room ID 1 (Flat 101)
 
   useEffect(() => {

@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @RestController
@@ -37,12 +38,15 @@ public class UserController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<Map<String, String>> login(@RequestBody LoginRequest loginRequest) {
+    public ResponseEntity<Map<String, Object>> login(@RequestBody LoginRequest loginRequest) {
         UserDto user = userService.findByEmail(loginRequest.getEmail());
         if (user == null || !loginRequest.getPassword().equals(user.getPassword())) {
             return ResponseEntity.status(401).body(Map.of("error", "Invalid email or password"));
         }
-        return ResponseEntity.ok(Map.of("username", user.getUsername()));
+        Map<String, Object> response = new HashMap<>();
+        response.put("userId", user.getId());
+        response.put("username", user.getUsername());
+        return ResponseEntity.ok(response);
     }
 
     private static class LoginRequest {
