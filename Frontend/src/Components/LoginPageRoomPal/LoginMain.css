@@ -34,7 +34,7 @@
 }
 #login-col-2 {
   background: rgba(255, 255, 255, 0.2);
-  /* backdrop-filter: blur(5px); */
+  backdrop-filter: blur(10px);
 }
 
 #login-footer-row {

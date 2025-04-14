@@ -14,7 +14,6 @@ import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 
 function UsrHomeRP() {
   const [activePage, setActivePage] = useState("View Financial Expenses");
-
   const handleOptionClick = (page) => {
     setActivePage(page);
   };
