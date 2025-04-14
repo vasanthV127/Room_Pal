@@ -26,14 +26,14 @@
 }
 #login-row-2 {
   min-height: 100vh;
-  background: url(./PixelHeart.png);
+  background: url(./LoginBg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 #login-col-2 {
   background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(5px); */
 }
 
 #login-footer-row {

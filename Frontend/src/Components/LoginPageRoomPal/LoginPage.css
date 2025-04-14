@@ -1,5 +1,7 @@
 #loginbox-col {
   width: 500px;
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
 }
 @media (max-width: 425px) {
   #loginbox-col {
