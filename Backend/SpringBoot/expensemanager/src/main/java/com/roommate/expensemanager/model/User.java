@@ -7,9 +7,9 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-@Data
 @Entity
-@Table(name = "users")
+@Table(name = "\"user\"")
+@Data
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,12 +22,13 @@ public class User {
     private String email;
 
     @Column(nullable = false)
-    private String password; // Plain text (no authentication)
+    private String password;
 
     private String fullName;
+
     private String profilePicture;
+
     private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
 
     @ManyToMany
     @JoinTable(
@@ -36,17 +37,6 @@ public class User {
             inverseJoinColumns = @JoinColumn(name = "room_id")
     )
     private List<Room> rooms = new ArrayList<>();
-
-    @PrePersist
-    protected void onCreate() {
-        createdAt = LocalDateTime.now();
-        updatedAt = LocalDateTime.now();
-    }
-
-    @PreUpdate
-    protected void onUpdate() {
-        updatedAt = LocalDateTime.now();
-    }
 
     public Long getId() {
         return id;
@@ -102,14 +92,6 @@ public class User {
 
     public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
-    }
-
-    public LocalDateTime getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public void setUpdatedAt(LocalDateTime updatedAt) {
-        this.updatedAt = updatedAt;
     }
 
     public List<Room> getRooms() {
