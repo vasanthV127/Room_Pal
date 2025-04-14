@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./UsrHomeRP.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import NotificationsRoundedIcon from "@mui/icons-material/NotificationsRounded";
 import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
@@ -9,6 +10,7 @@ import ManageFinance from "../ManageFinance/ManageFinance";
 import AccessComunityForum from "../AccessComunityForum/AccessComunityForum";
 import UploadBills from "../UploadBills/UploadBills";
 import ManageTasks from "../ManageTasks/ManageTasks";
+import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 
 function UsrHomeRP() {
   const [activePage, setActivePage] = useState("View Financial Expenses");
@@ -45,7 +47,7 @@ function UsrHomeRP() {
         <div id="UsrHome-NavBar-Row" className="row">
           <div
             id="UsrHome-NavBar-Col"
-            className="col d-flex justify-content-start align-items-center  ps-md-5"
+            className="col-12 d-sm-flex justify-content-sm-start align-items-sm-center d-none  ps-md-5"
           >
             <div
               id="UsrHome-NavBar-Options"
@@ -74,6 +76,68 @@ function UsrHomeRP() {
               </a>
             </div>
           </div>
+          {/* For Mobile */}
+          <div className="col-12 d-flex justify-content-end align-items-center d-sm-none">
+            <button
+              id="mobileHamburgerBtn"
+              className="btn btn-primary"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              <MenuRoundedIcon
+                style={{
+                  fontSize: 30,
+                  color: "black",
+                }}
+              />
+            </button>
+
+            <div
+              className="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel"
+            >
+              <div className="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Welcome</h5>
+                <button
+                  type="button"
+                  className="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div
+                id="UsrHome-NavBar-Options"
+                className="offcanvas-body d-flex gap-5 flex-column justify-content-center align-items-start ps-5"
+              >
+                <a
+                  onClick={() => handleOptionClick("View Financial Expenses")}
+                  href="#"
+                >
+                  View Financial Expenses
+                </a>
+                <a onClick={() => handleOptionClick("Manage Finance")} href="#">
+                  Manage Finance
+                </a>
+                <a
+                  onClick={() => handleOptionClick("View Discussion Forum")}
+                  href="#"
+                >
+                  View Discussion Forum
+                </a>
+                <a onClick={() => handleOptionClick("Upload Bills")} href="#">
+                  Upload Bills
+                </a>
+                <a onClick={() => handleOptionClick("Manage Tasks")} href="#">
+                  Manage Tasks
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* End */}
         </div>
       </div>
       <div className="container-fluid">
