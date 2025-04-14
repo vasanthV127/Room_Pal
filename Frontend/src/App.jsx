@@ -1,29 +1,31 @@
-import { useState } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import './App.css';
-import Dashboard from './Components/Dashboard/Dashboard';
-import ViewFinancialExpenses from './Components/ViewFinancialExpenses/ViewFinancialExpenses';
-import ManageFinance from './Components/ManageFinance/ManageFinance';
-import AccessComunityForum from './Components/AccessComunityForum/AccessComunityForum';
-import UploadBills from './Components/UploadBills/UploadBills';
-import ManageTasks from './Components/ManageTasks/ManageTasks';
-import LoginMain from './Components/LoginPageRoomPal/LoginMain';
+import { useState } from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import "./App.css";
+import Dashboard from "./Components/Dashboard/Dashboard";
+import ViewFinancialExpenses from "./Components/ViewFinancialExpenses/ViewFinancialExpenses";
+import ManageFinance from "./Components/ManageFinance/ManageFinance";
+import AccessComunityForum from "./Components/AccessComunityForum/AccessComunityForum";
+import UploadBills from "./Components/UploadBills/UploadBills";
+import ManageTasks from "./Components/ManageTasks/ManageTasks";
+import LoginMain from "./Components/LoginPageRoomPal/LoginMain";
+
+import UsrHomeRP from "./Components/UsrHomePage/UsrHomeRP";
 
 function App() {
-  const [activeView, setActiveView] = useState('expenses');
+  const [activeView, setActiveView] = useState("expenses");
 
   // Render the main content based on active view
   const renderContent = () => {
     switch (activeView) {
-      case 'expenses':
+      case "expenses":
         return <ViewFinancialExpenses />;
-      case 'finances':
+      case "finances":
         return <ManageFinance />;
-      case 'forum':
+      case "forum":
         return <AccessComunityForum />;
-      case 'upload':
+      case "upload":
         return <UploadBills />;
-      case 'tasks':
+      case "tasks":
         return <ManageTasks />;
       default:
         return <div>Select a view from the sidebar</div>;
@@ -35,9 +37,6 @@ function App() {
     return (
       <div className="dashboard-container">
         <Dashboard activeView={activeView} setActiveView={setActiveView} />
-        <div className="main-content">
-          {renderContent()}
-        </div>
       </div>
     );
   };
@@ -46,7 +45,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LoginMain />} />
-        <Route path="/dashboard" element={<DashboardLayout />} />
+        <Route path="/dashboard" element={<UsrHomeRP />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>

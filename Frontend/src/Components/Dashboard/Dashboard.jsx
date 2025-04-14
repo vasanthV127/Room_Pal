@@ -1,12 +1,11 @@
-import ViewFinancialExpenses from '../ViewFinancialExpenses/ViewFinancialExpenses';
-import ManageFinance from '../ManageFinance/ManageFinance';
-import AccessCommunityForum from '../AccessComunityForum/AccessComunityForum';
-import UploadBills from '../UploadBills/UploadBills';
-import ManageTasks from '../ManageTasks/ManageTasks';
+import ViewFinancialExpenses from "../ViewFinancialExpenses/ViewFinancialExpenses";
+import ManageFinance from "../ManageFinance/ManageFinance";
+import AccessCommunityForum from "../AccessComunityForum/AccessComunityForum";
+import UploadBills from "../UploadBills/UploadBills";
+import ManageTasks from "../ManageTasks/ManageTasks";
 
-
-import { useState, useEffect } from 'react';
-import { 
+import { useState, useEffect } from "react";
+import {
   DollarSign,
   Wallet,
   MessageSquare,
@@ -18,13 +17,13 @@ import {
   MoreHorizontal,
   Home,
   Search,
-  Menu
-} from 'lucide-react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './Dashboard.css';
+  Menu,
+} from "lucide-react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./Dashboard.css";
 
 const Dashboard = ({ activeView, setActiveView }) => {
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
 
@@ -33,7 +32,7 @@ const Dashboard = ({ activeView, setActiveView }) => {
     const handleResize = () => {
       const mobile = window.innerWidth < 992;
       setIsMobile(mobile);
-      
+
       // Auto-open sidebar on desktop
       if (!mobile) {
         setSidebarOpen(true);
@@ -42,12 +41,12 @@ const Dashboard = ({ activeView, setActiveView }) => {
 
     // Set initial state
     handleResize();
-    
+
     // Add event listener
-    window.addEventListener('resize', handleResize);
-    
+    window.addEventListener("resize", handleResize);
+
     // Cleanup
-    return () => window.removeEventListener('resize', handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const toggleSidebar = () => {
@@ -62,7 +61,7 @@ const Dashboard = ({ activeView, setActiveView }) => {
       </div>
 
       {/* Sidebar */}
-      <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
+      <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
         <div className="sidebar-header">
           {isMobile && (
             <div className="back-button" onClick={toggleSidebar}>
@@ -85,72 +84,72 @@ const Dashboard = ({ activeView, setActiveView }) => {
 
         <nav className="sidebar-menu">
           <div
-            className={`menu-item ${activeView === 'expenses' ? 'active' : ''}`}
+            className={`menu-item ${activeView === "expenses" ? "active" : ""}`}
             onClick={() => {
-              setActiveView('expenses');
+              setActiveView("expenses");
               if (isMobile) toggleSidebar();
             }}
           >
             <div className="menu-icon expense-icon">
               <DollarSign size={18} />
             </div>
-            <span>View Financial Expenses</span>
+            <span id="dbSideIcon-1">View Financial Expenses</span>
             <ChevronRight size={16} className="chevron" />
           </div>
 
           <div
-            className={`menu-item ${activeView === 'finances' ? 'active' : ''}`}
+            className={`menu-item ${activeView === "finances" ? "active" : ""}`}
             onClick={() => {
-              setActiveView('finances');
+              setActiveView("finances");
               if (isMobile) toggleSidebar();
             }}
           >
             <div className="menu-icon finances-icon">
               <Wallet size={18} />
             </div>
-            <span>Manage Finances</span>
+            <span id="dbSideIcon-1">Manage Finances</span>
             <ChevronRight size={16} className="chevron" />
           </div>
 
           <div
-            className={`menu-item ${activeView === 'forum' ? 'active' : ''}`}
+            className={`menu-item ${activeView === "forum" ? "active" : ""}`}
             onClick={() => {
-              setActiveView('forum');
+              setActiveView("forum");
               if (isMobile) toggleSidebar();
             }}
           >
             <div className="menu-icon forum-icon">
               <MessageSquare size={18} />
             </div>
-            <span>Access Finances Forum</span>
+            <span id="dbSideIcon-1">Access Finances Forum</span>
             <ChevronRight size={16} className="chevron" />
           </div>
 
           <div
-            className={`menu-item ${activeView === 'upload' ? 'active' : ''}`}
+            className={`menu-item ${activeView === "upload" ? "active" : ""}`}
             onClick={() => {
-              setActiveView('upload');
+              setActiveView("upload");
               if (isMobile) toggleSidebar();
             }}
           >
             <div className="menu-icon upload-icon">
               <Upload size={18} />
             </div>
-            <span>Upload Bills</span>
+            <span id="dbSideIcon-1">Upload Bills</span>
             <ChevronRight size={16} className="chevron" />
           </div>
 
           <div
-            className={`menu-item ${activeView === 'tasks' ? 'active' : ''}`}
+            className={`menu-item ${activeView === "tasks" ? "active" : ""}`}
             onClick={() => {
-              setActiveView('tasks');
+              setActiveView("tasks");
               if (isMobile) toggleSidebar();
             }}
           >
             <div className="menu-icon tasks-icon">
               <CheckSquare size={18} />
             </div>
-            <span>Manage Tasks</span>
+            <span id="dbSideIcon-1">Manage Tasks</span>
             <ChevronRight size={16} className="chevron" />
           </div>
         </nav>
@@ -177,19 +176,23 @@ const Dashboard = ({ activeView, setActiveView }) => {
 
       {/* Content Area - properly positioned to adjust for sidebar */}
       <div className="content-area">
-        <h1>{activeView === 'expenses' && 'View Financial Expenses'}</h1>
-        <h1>{activeView === 'finances' && 'Manage Finances'}</h1>
-        <h1>{activeView === 'forum' && 'Access Finances Forum'}</h1>
-        <h1>{activeView === 'upload' && 'Upload Bills'}</h1>
-        <h1>{activeView === 'tasks' && 'Manage Tasks'}</h1>
-        
+        <h1 id="dbTitle-1">
+          {activeView === "expenses" && "View Financial Expenses"}
+        </h1>
+        <h1 id="dbTitle-1">{activeView === "finances" && "Manage Finances"}</h1>
+        <h1 id="dbTitle-1">
+          {activeView === "forum" && "Access Finances Forum"}
+        </h1>
+        <h1 id="dbTitle-1">{activeView === "upload" && "Upload Bills"}</h1>
+        <h1 id="dbTitle-1">{activeView === "tasks" && "Manage Tasks"}</h1>
+
         {/* Example content to demonstrate layout */}
         <div className="dashboard-content">
-        {activeView === 'expenses' && <ViewFinancialExpenses />}
-        {activeView === 'finances' && <ManageFinance />}
-        {activeView === 'forum' && <AccessCommunityForum />}
-        {activeView === 'upload' && <UploadBills />}
-        {activeView === 'tasks' && <ManageTasks />}
+          {activeView === "expenses" && <ViewFinancialExpenses />}
+          {activeView === "finances" && <ManageFinance />}
+          {activeView === "forum" && <AccessCommunityForum />}
+          {activeView === "upload" && <UploadBills />}
+          {activeView === "tasks" && <ManageTasks />}
         </div>
       </div>
     </div>

@@ -1,44 +1,49 @@
 h2 {
-    margin-bottom: 20px;
-    color: #333;
-    font-size: 24px;
-  }
-  
-  .expenses-list {
-    padding: 10px;
-  }
-  
-  .expense-item {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    border-bottom: 1px solid #e0d4c3;
-  }
-  
-  .expense-icon {
-    width: 30px;
-    height: 30px;
-    background-color: #e69b76;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .expense-details {
-    flex: 1;
-    margin-left: 10px;
-  }
-  
-  .expense-name {
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .expense-category {
-    color: #777;
-    font-size: 14px;
-  }
-  
-  .expense-amount {
-    font-weight: bold;
-    color: #333;
-  }
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+#ViewFinanceTitle {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+}
+.expenses-list {
+  padding: 10px;
+}
+
+.expense-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #e0d4c3;
+}
+
+.expense-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #e69b76;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.expense-details {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.expense-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.expense-category {
+  color: #777;
+  font-size: 14px;
+}
+
+.expense-amount {
+  font-weight: bold;
+  color: #333;
+}
