@@ -160,15 +160,15 @@ function UsrHomeRP() {
         <footer>
           <div id="usrhome-footer-row" className="row">
             {/*...FOR DESKTOP's AND LAPTOP's AND TAB's*/}
-            <div
+            {/* <div
               id="usrhome-footer-col-1"
-              className="col-4 d-flex justify-content-start align-items-center  ps-md-5"
+              className="col-6 d-flex justify-content-start align-items-center  ps-md-5"
             >
               <a>Support</a>
-            </div>
+            </div> */}
             <div
               id="usrhome-footer-col-2"
-              className="col-4 text-center d-flex justify-content-center align-items-center"
+              className="col-12 text-center d-flex justify-content-center align-items-center"
             >
               <a>
                 <FontAwesomeIcon
@@ -178,12 +178,12 @@ function UsrHomeRP() {
                 &nbsp;2024 ROOM PAL. All rights reserved.
               </a>
             </div>
-            <div
+            {/* <div
               id="usrhome-footer-col-3"
               className="col-4 d-flex justify-content-end align-items-center  pe-md-5"
             >
               <a href="#">Privacy Policy</a>
-            </div>
+            </div> */}
           </div>
         </footer>
       </div>
