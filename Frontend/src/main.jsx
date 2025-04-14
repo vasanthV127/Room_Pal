@@ -9,6 +9,7 @@ import RegisterMain from "./Components/RegisterPageRoomPal/RegisterMain.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     {/* <App /> */}
-    <RegisterMain></RegisterMain>
+    <LoginMain></LoginMain>
+    {/* <RegisterMain></RegisterMain> */}
   </React.StrictMode>
 );

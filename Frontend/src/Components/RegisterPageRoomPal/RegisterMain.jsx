@@ -52,7 +52,7 @@ function RegisterMain() {
                   icon={faCopyright}
                   style={{ color: "rgba(9, 9, 117, 1)" }}
                 />
-                &nbsp;2024 ROOM PAL
+                &nbsp;2024 ROOM PAL. All rights reserved.
               </a>
             </div>
             <div
