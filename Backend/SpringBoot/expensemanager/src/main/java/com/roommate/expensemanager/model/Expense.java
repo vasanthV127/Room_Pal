@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Table(name = "expense")
@@ -32,6 +33,11 @@ public class Expense {
     @ManyToOne
     @JoinColumn(name = "payer_id", nullable = false)
     private User payer;
+
+    @ElementCollection
+    @CollectionTable(name = "expense_split_users", joinColumns = @JoinColumn(name = "expense_id"))
+    @Column(name = "user_id")
+    private List<Long> splitUserIds;
 
     public Long getId() {
         return id;
@@ -87,5 +93,13 @@ public class Expense {
 
     public void setPayer(User payer) {
         this.payer = payer;
+    }
+
+    public List<Long> getSplitUserIds() {
+        return splitUserIds;
+    }
+
+    public void setSplitUserIds(List<Long> splitUserIds) {
+        this.splitUserIds = splitUserIds;
     }
 }

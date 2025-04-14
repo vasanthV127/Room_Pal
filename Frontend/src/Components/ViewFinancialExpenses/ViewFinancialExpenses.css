@@ -3,12 +3,14 @@ h2 {
   color: #333;
   font-size: 24px;
 }
+
 #ViewFinanceTitle {
   font-family: "Poppins", serif;
   font-weight: 300;
   font-style: normal;
   font-size: 30px;
 }
+
 .expenses-list {
   padding: 10px;
 }
@@ -46,4 +48,12 @@ h2 {
 .expense-amount {
   font-weight: bold;
   color: #333;
+}
+
+/* Optional: Improve spacing for empty state or error */
+.expenses-list p {
+  color: #777;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
 }

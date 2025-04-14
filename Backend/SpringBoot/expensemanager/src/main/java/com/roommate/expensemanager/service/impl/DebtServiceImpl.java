@@ -26,7 +26,7 @@ public class DebtServiceImpl implements DebtService {
 
     @Override
     public List<DebtDto> getDebts(Long userId) {
-        return debtRepository.findByDebtorIdOrCreditorId(userId, userId).stream()
+        return debtRepository.findByDebtorIdAndRoomId(userId, userId).stream()
                 .map(DebtDto::fromEntity)
                 .toList();
     }

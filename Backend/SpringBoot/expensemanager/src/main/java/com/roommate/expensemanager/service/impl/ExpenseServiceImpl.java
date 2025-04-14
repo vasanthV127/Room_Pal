@@ -1,5 +1,6 @@
 package com.roommate.expensemanager.service.impl;
 
+import com.roommate.expensemanager.dto.DebtDto;
 import com.roommate.expensemanager.dto.ExpenseDto;
 import com.roommate.expensemanager.model.Debt;
 import com.roommate.expensemanager.model.Expense;
@@ -13,6 +14,7 @@ import com.roommate.expensemanager.service.ExpenseService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class ExpenseServiceImpl implements ExpenseService {
@@ -21,8 +23,12 @@ public class ExpenseServiceImpl implements ExpenseService {
     private final UserRepository userRepository;
     private final DebtRepository debtRepository;
 
-    public ExpenseServiceImpl(ExpenseRepository expenseRepository, RoomRepository roomRepository,
-                              UserRepository userRepository, DebtRepository debtRepository) {
+    public ExpenseServiceImpl(
+            ExpenseRepository expenseRepository,
+            RoomRepository roomRepository,
+            UserRepository userRepository,
+            DebtRepository debtRepository
+    ) {
         this.expenseRepository = expenseRepository;
         this.roomRepository = roomRepository;
         this.userRepository = userRepository;
@@ -36,7 +42,6 @@ public class ExpenseServiceImpl implements ExpenseService {
         User payer = userRepository.findById(expenseDto.getPayerId())
                 .orElseThrow(() -> new IllegalArgumentException("Payer not found"));
 
-        // Verify split users are in room
         List<User> splitUsers = expenseDto.getSplitUserIds().stream()
                 .map(id -> userRepository.findById(id)
                         .orElseThrow(() -> new IllegalArgumentException("User " + id + " not found")))
@@ -56,11 +61,9 @@ public class ExpenseServiceImpl implements ExpenseService {
         expense.setPayer(payer);
         expense = expenseRepository.save(expense);
 
-        // Split expense: total = rate * quantity
         double total = expenseDto.getRate() * expenseDto.getQuantity();
-        double splitAmount = total / splitUsers.size(); // Split among selected users
+        double splitAmount = total / splitUsers.size();
 
-        // Create debts for selected users (exclude payer if in split)
         for (User debtor : splitUsers) {
             if (!debtor.getId().equals(payer.getId())) {
                 Debt debt = new Debt();
@@ -83,9 +86,53 @@ public class ExpenseServiceImpl implements ExpenseService {
         return expenseRepository.findByRoomId(roomId).stream()
                 .map(expense -> {
                     ExpenseDto dto = ExpenseDto.fromEntity(expense);
-                    // Optionally set splitUserIds if stored
                     return dto;
                 })
                 .toList();
+    }
+
+    @Override
+    public List<ExpenseDto> getPersonalExpenses(Long userId, Long roomId) {
+        roomRepository.findById(roomId)
+                .orElseThrow(() -> new IllegalArgumentException("Room not found"));
+        userRepository.findById(userId)
+                .orElseThrow(() -> new IllegalArgumentException("User not found"));
+
+        return expenseRepository.findByPayerIdAndRoomId(userId, roomId).stream()
+                .map(expense -> {
+                    ExpenseDto dto = ExpenseDto.fromEntity(expense);
+                    // Assume splitUserIds stored externally or via custom logic
+                    // For now, filter based on no debts created
+                    return dto;
+                })
+                .filter(dto -> {
+                    List<Debt> debts = debtRepository.findByExpenseId(dto.getId());
+                    return debts.isEmpty(); // Personal expense = no debts
+                })
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<DebtDto> getDebtsToPay(Long userId, Long roomId) {
+        roomRepository.findById(roomId)
+                .orElseThrow(() -> new IllegalArgumentException("Room not found"));
+        userRepository.findById(userId)
+                .orElseThrow(() -> new IllegalArgumentException("User not found"));
+
+        return debtRepository.findByDebtorIdAndRoomId(userId, roomId).stream()
+                .map(DebtDto::fromEntity)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<DebtDto> getDebtsOwed(Long userId, Long roomId) {
+        roomRepository.findById(roomId)
+                .orElseThrow(() -> new IllegalArgumentException("Room not found"));
+        userRepository.findById(userId)
+                .orElseThrow(() -> new IllegalArgumentException("User not found"));
+
+        return debtRepository.findByCreditorIdAndRoomId(userId, roomId).stream()
+                .map(DebtDto::fromEntity)
+                .collect(Collectors.toList());
     }
 }
