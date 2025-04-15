@@ -13,9 +13,9 @@ import com.roommate.expensemanager.repository.UserRepository;
 import com.roommate.expensemanager.service.ExpenseService;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
@@ -156,5 +156,61 @@ public class ExpenseServiceImpl implements ExpenseService {
         response.put("userId", suggestedUserId);
         response.put("username", suggestedUser.getUsername());
         return response;
+    }
+
+    @Override
+    public List<Map<String, Object>> getExpenseSummary(Long roomId, Long userId, String period) {
+        List<Expense> expenses = expenseRepository.findByRoomId(roomId);
+        List<Expense> personalExpenses = expenseRepository.findByPayerIdAndRoomId(userId, roomId);
+
+        Map<String, Double> teamTotals = new HashMap<>();
+        Map<String, Double> selfTotals = new HashMap<>();
+
+        DateTimeFormatter formatter;
+        switch (period.toLowerCase()) {
+            case "day":
+                formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+                break;
+            case "month":
+                formatter = DateTimeFormatter.ofPattern("yyyy-MM");
+                break;
+            case "year":
+                formatter = DateTimeFormatter.ofPattern("yyyy");
+                break;
+            default:
+                throw new IllegalArgumentException("Invalid period: " + period);
+        }
+
+        // Team expenses
+        for (Expense expense : expenses) {
+            String key = expense.getDate().format(formatter);
+            double amount = expense.getRate() * expense.getQuantity();
+            teamTotals.merge(key, amount, Double::sum);
+        }
+
+        // Personal expenses
+        for (Expense expense : personalExpenses) {
+            String key = expense.getDate().format(formatter);
+            double amount = expense.getRate() * expense.getQuantity();
+            selfTotals.merge(key, amount, Double::sum);
+        }
+
+        // Combine keys
+        Set<String> allKeys = new TreeSet<>(teamTotals.keySet());
+        allKeys.addAll(selfTotals.keySet());
+
+        // Build response
+        List<Map<String, Object>> summary = new ArrayList<>();
+        for (String key : allKeys) {
+            Map<String, Object> entry = new HashMap<>();
+            entry.put("period", key);
+            entry.put("team", teamTotals.getOrDefault(key, 0.0));
+            entry.put("self", selfTotals.getOrDefault(key, 0.0));
+            summary.add(entry);
+        }
+
+        return summary.stream()
+                .sorted(Comparator.comparing(m -> (String) m.get("period")))
+                .collect(Collectors.toList());
     }
 }

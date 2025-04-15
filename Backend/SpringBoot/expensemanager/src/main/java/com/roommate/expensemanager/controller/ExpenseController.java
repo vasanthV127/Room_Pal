@@ -56,4 +56,13 @@ public class ExpenseController {
     public ResponseEntity<Map<String, Object>> getPayerSuggestion(@RequestParam Long roomId) {
         return ResponseEntity.ok(expenseService.getPayerSuggestion(roomId));
     }
+
+    @GetMapping("/summary")
+    public ResponseEntity<List<Map<String, Object>>> getExpenseSummary(
+            @RequestParam Long roomId,
+            @RequestParam Long userId,
+            @RequestParam String period // day, month, year
+    ) {
+        return ResponseEntity.ok(expenseService.getExpenseSummary(roomId, userId, period));
+    }
 }

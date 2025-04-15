@@ -13,4 +13,5 @@ public interface ExpenseService {
     List<DebtDto> getDebtsToPay(Long userId, Long roomId);
     List<DebtDto> getDebtsOwed(Long userId, Long roomId);
     Map<String, Object> getPayerSuggestion(Long roomId);
+    List<Map<String, Object>> getExpenseSummary(Long roomId, Long userId, String period);
 }
