@@ -12,6 +12,7 @@ import UploadBills from "../UploadBills/UploadBills";
 import ManageTasks from "../ManageTasks/ManageTasks";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
+import Notifications from "../Notification/Notifications";
 
 function UsrHomeRP() {
   const [activePage, setActivePage] = useState("View Financial Expenses");
@@ -34,6 +35,7 @@ function UsrHomeRP() {
           >
             <a id="UsrHome-Notifications-Icon" href="#">
               <NotificationsNoneRoundedIcon
+                onClick={() => handleOptionClick("Notifications")}
                 style={{ fontSize: 25, color: "black" }}
               />
             </a>
@@ -151,7 +153,7 @@ function UsrHomeRP() {
             {activePage === "View Discussion Forum" && <AccessComunityForum />}
             {activePage === "Upload Bills" && <UploadBills />}
             {activePage === "Manage Tasks" && <ManageTasks />}
-            {activePage === "Notifications" && <h1>Notifications</h1>}
+            {activePage === "Notifications" && <Notifications />}
             {activePage === "Profile" && <h1>Profile Page</h1>}
           </div>
         </div>

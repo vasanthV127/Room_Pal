@@ -415,7 +415,14 @@ const ManageTasks = () => {
         </Typography>
         <Box className="row g-3">
           {pendingTasks.length === 0 ? (
-            <Typography>No pending tasks.</Typography>
+            <Typography
+              sx={{
+                fontFamily: "Poppins, sans-serif",
+                fontWeight: 400,
+              }}
+            >
+              No pending tasks.
+            </Typography>
           ) : (
             pendingTasks.map((task) => (
               <Box
@@ -439,7 +446,9 @@ const ManageTasks = () => {
                   <CardContent className="d-flex align-items-center">
                     <Checkbox
                       checked={task.completed}
-                      onChange={() => handleToggleComplete(task.id, task.completed)}
+                      onChange={() =>
+                        handleToggleComplete(task.id, task.completed)
+                      }
                       sx={{
                         color: "#FBBF24",
                         "&.Mui-checked": { color: "#FBBF24" },
@@ -451,7 +460,9 @@ const ManageTasks = () => {
                           fontFamily: "Poppins, sans-serif",
                           fontWeight: 400,
                           fontSize: { xs: "16px", md: "18px" },
-                          textDecoration: task.completed ? "line-through" : "none",
+                          textDecoration: task.completed
+                            ? "line-through"
+                            : "none",
                           color: "#1F2937",
                         }}
                       >
@@ -490,7 +501,14 @@ const ManageTasks = () => {
         </Typography>
         <Box className="row g-3">
           {completedTasks.length === 0 ? (
-            <Typography>No completed tasks.</Typography>
+            <Typography
+              sx={{
+                fontFamily: "Poppins, sans-serif",
+                fontWeight: 400,
+              }}
+            >
+              No completed tasks.
+            </Typography>
           ) : (
             completedTasks.map((task) => (
               <Box
@@ -514,7 +532,9 @@ const ManageTasks = () => {
                   <CardContent className="d-flex align-items-center">
                     <Checkbox
                       checked={task.completed}
-                      onChange={() => handleToggleComplete(task.id, task.completed)}
+                      onChange={() =>
+                        handleToggleComplete(task.id, task.completed)
+                      }
                       sx={{
                         color: "#FBBF24",
                         "&.Mui-checked": { color: "#FBBF24" },
@@ -526,7 +546,9 @@ const ManageTasks = () => {
                           fontFamily: "Poppins, sans-serif",
                           fontWeight: 400,
                           fontSize: { xs: "16px", md: "18px" },
-                          textDecoration: task.completed ? "line-through" : "none",
+                          textDecoration: task.completed
+                            ? "line-through"
+                            : "none",
                           color: "#1F2937",
                         }}
                       >

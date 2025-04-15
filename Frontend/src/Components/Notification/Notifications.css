@@ -1,12 +1,12 @@
 .notifications {
-    padding: 20px 0;
-  }
-  
-  .notification-item {
-    border-bottom: 1px solid #e5e7eb;
-    padding: 10px 0;
-  }
-  
-  .notification-item:last-child {
-    border-bottom: none;
-  }
+  padding: 20px 0;
+}
+
+.notification-item {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 10px 0;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
