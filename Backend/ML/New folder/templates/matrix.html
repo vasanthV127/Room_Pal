@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Purchase Matrix</title>
+    <style>
+        table, th, td { border: 1px solid black; border-collapse: collapse; padding: 8px; }
+    </style>
+</head>
+<body>
+    <h2>2x2 User Purchase Matrix</h2>
+    <table>
+        <tr>
+            {% for user in matrix.keys() %}
+                <th>User {{ user }}</th>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for purchases in matrix.values() %}
+                <td>
+                    {% for item in purchases %}
+                        {{ item.Product }} - ₹{{ item.Share }}<br>
+                    {% endfor %}
+                </td>
+            {% endfor %}
+        </tr>
+    </table>
+</body>
+</html>

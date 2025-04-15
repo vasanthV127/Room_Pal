@@ -1,0 +1,5212 @@
+[
+  {
+    "productName": "Basmati Rice",
+    "rate": 142.38,
+    "quantity": 4,
+    "date": "2025-01-18",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Urad Dal",
+    "rate": 86.97,
+    "quantity": 3,
+    "date": "2025-01-18",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Mango",
+    "rate": 123.69,
+    "quantity": 5,
+    "date": "2025-03-07",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Eggs",
+    "rate": 64.91,
+    "quantity": 1,
+    "date": "2025-03-07",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Milk",
+    "rate": 40.3,
+    "quantity": 1,
+    "date": "2024-11-19",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Salt",
+    "rate": 21.93,
+    "quantity": 1,
+    "date": "2024-11-19",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Coconut Oil",
+    "rate": 164.27,
+    "quantity": 5,
+    "date": "2025-02-23",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Curd",
+    "rate": 27.93,
+    "quantity": 5,
+    "date": "2025-02-23",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Wheat Flour",
+    "rate": 35.1,
+    "quantity": 2,
+    "date": "2024-12-26",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Curd",
+    "rate": 38.38,
+    "quantity": 2,
+    "date": "2024-12-26",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Salt",
+    "rate": 21.7,
+    "quantity": 1,
+    "date": "2024-11-12",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Banana",
+    "rate": 40.91,
+    "quantity": 3,
+    "date": "2024-11-12",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Salt",
+    "rate": 11.45,
+    "quantity": 4,
+    "date": "2025-03-20",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Milk",
+    "rate": 41.64,
+    "quantity": 1,
+    "date": "2025-03-20",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Paneer",
+    "rate": 129.6,
+    "quantity": 2,
+    "date": "2025-02-26",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Sugar",
+    "rate": 46.52,
+    "quantity": 3,
+    "date": "2025-02-26",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Urad Dal",
+    "rate": 87.08,
+    "quantity": 5,
+    "date": "2025-02-09",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      4,
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Milk",
+    "rate": 45.21,
+    "quantity": 4,
+    "date": "2025-02-09",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      4,
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Mango",
+    "rate": 148.97,
+    "quantity": 1,
+    "date": "2025-01-27",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Groundnut Oil",
+    "rate": 197.31,
+    "quantity": 5,
+    "date": "2025-01-27",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 82.86,
+    "quantity": 1,
+    "date": "2025-04-08",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      5,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Tea Powder",
+    "rate": 122.88,
+    "quantity": 5,
+    "date": "2025-04-08",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      5,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Mango",
+    "rate": 145.95,
+    "quantity": 1,
+    "date": "2024-11-29",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      3,
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Tea Powder",
+    "rate": 170.29,
+    "quantity": 1,
+    "date": "2024-11-29",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      3,
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Milk",
+    "rate": 48.86,
+    "quantity": 4,
+    "date": "2024-11-11",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Curd",
+    "rate": 42.32,
+    "quantity": 2,
+    "date": "2024-11-11",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Sunflower Oil",
+    "rate": 107.75,
+    "quantity": 3,
+    "date": "2024-11-11",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      5
+    ]
+  },
+  {
+    "productName": "Potato",
+    "rate": 20.36,
+    "quantity": 4,
+    "date": "2024-11-11",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      5
+    ]
+  },
+  {
+    "productName": "Eggs",
+    "rate": 64.6,
+    "quantity": 3,
+    "date": "2024-12-14",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Curd",
+    "rate": 27.23,
+    "quantity": 5,
+    "date": "2024-12-14",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Urad Dal",
+    "rate": 90.67,
+    "quantity": 1,
+    "date": "2025-02-02",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      4,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Milk",
+    "rate": 55.32,
+    "quantity": 1,
+    "date": "2025-02-02",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      4,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Curd",
+    "rate": 25.54,
+    "quantity": 1,
+    "date": "2025-02-08",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      4,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Tea Powder",
+    "rate": 240.5,
+    "quantity": 3,
+    "date": "2025-02-08",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      4,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 128.06,
+    "quantity": 1,
+    "date": "2024-11-08",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      5,
+      3,
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Butter",
+    "rate": 221.81,
+    "quantity": 2,
+    "date": "2024-11-08",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      5,
+      3,
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Orange",
+    "rate": 108.32,
+    "quantity": 3,
+    "date": "2025-03-21",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Wheat Flour",
+    "rate": 32.74,
+    "quantity": 5,
+    "date": "2025-03-21",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Toor Dal",
+    "rate": 108.23,
+    "quantity": 3,
+    "date": "2025-02-07",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      4,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Coffee Powder",
+    "rate": 164.32,
+    "quantity": 2,
+    "date": "2025-02-07",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      4,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Milk",
+    "rate": 47.51,
+    "quantity": 5,
+    "date": "2025-01-23",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Paneer",
+    "rate": 107.05,
+    "quantity": 2,
+    "date": "2025-01-23",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Sunflower Oil",
+    "rate": 189.16,
+    "quantity": 5,
+    "date": "2025-01-22",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      4,
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Onion",
+    "rate": 33.53,
+    "quantity": 4,
+    "date": "2025-01-22",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      4,
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Sugar",
+    "rate": 52.38,
+    "quantity": 1,
+    "date": "2025-02-24",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Groundnut Oil",
+    "rate": 116.47,
+    "quantity": 5,
+    "date": "2025-02-24",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Curd",
+    "rate": 32.15,
+    "quantity": 1,
+    "date": "2024-11-29",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Sugar",
+    "rate": 49.92,
+    "quantity": 1,
+    "date": "2024-11-29",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Toor Dal",
+    "rate": 106.42,
+    "quantity": 1,
+    "date": "2025-04-01",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      5,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Sunflower Oil",
+    "rate": 184.33,
+    "quantity": 3,
+    "date": "2025-04-01",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      5,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Sunflower Oil",
+    "rate": 150.51,
+    "quantity": 5,
+    "date": "2025-02-23",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Curd",
+    "rate": 31.21,
+    "quantity": 4,
+    "date": "2025-02-23",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Potato",
+    "rate": 20.01,
+    "quantity": 5,
+    "date": "2024-11-04",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Orange",
+    "rate": 83.45,
+    "quantity": 1,
+    "date": "2024-11-04",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 105.44,
+    "quantity": 5,
+    "date": "2025-02-09",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      2,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Potato",
+    "rate": 26.11,
+    "quantity": 4,
+    "date": "2025-02-09",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      2,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Groundnut Oil",
+    "rate": 170.6,
+    "quantity": 5,
+    "date": "2025-04-05",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      5,
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Curd",
+    "rate": 37.81,
+    "quantity": 5,
+    "date": "2025-04-05",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      5,
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Salt",
+    "rate": 21.72,
+    "quantity": 3,
+    "date": "2025-02-20",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      5,
+      3,
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Wheat Flour",
+    "rate": 59.5,
+    "quantity": 1,
+    "date": "2025-02-20",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      5,
+      3,
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Onion",
+    "rate": 35.33,
+    "quantity": 5,
+    "date": "2025-01-27",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Coconut Oil",
+    "rate": 150.71,
+    "quantity": 4,
+    "date": "2025-01-27",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Urad Dal",
+    "rate": 91.44,
+    "quantity": 2,
+    "date": "2025-02-02",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Apple",
+    "rate": 152.09,
+    "quantity": 5,
+    "date": "2025-02-02",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 139.18,
+    "quantity": 3,
+    "date": "2025-03-30",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Sugar",
+    "rate": 45.53,
+    "quantity": 4,
+    "date": "2025-03-30",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Sugar",
+    "rate": 35.18,
+    "quantity": 3,
+    "date": "2024-11-28",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      4,
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Eggs",
+    "rate": 80.48,
+    "quantity": 1,
+    "date": "2024-11-28",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      4,
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Coconut Oil",
+    "rate": 110.4,
+    "quantity": 4,
+    "date": "2025-01-01",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      5,
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Potato",
+    "rate": 33.16,
+    "quantity": 5,
+    "date": "2025-01-01",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      5,
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Mango",
+    "rate": 139.37,
+    "quantity": 5,
+    "date": "2025-01-30",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Coffee Powder",
+    "rate": 217.08,
+    "quantity": 3,
+    "date": "2025-01-30",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Toor Dal",
+    "rate": 103.75,
+    "quantity": 2,
+    "date": "2024-10-28",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      5,
+      4,
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Potato",
+    "rate": 33.25,
+    "quantity": 4,
+    "date": "2024-10-28",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      5,
+      4,
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Groundnut Oil",
+    "rate": 178.39,
+    "quantity": 5,
+    "date": "2024-10-25",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Onion",
+    "rate": 27.64,
+    "quantity": 5,
+    "date": "2024-10-25",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Eggs",
+    "rate": 61.74,
+    "quantity": 4,
+    "date": "2025-04-13",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Mango",
+    "rate": 148.79,
+    "quantity": 4,
+    "date": "2025-04-13",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Coffee Powder",
+    "rate": 285.81,
+    "quantity": 3,
+    "date": "2024-12-26",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Toor Dal",
+    "rate": 109.36,
+    "quantity": 1,
+    "date": "2024-12-26",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Toor Dal",
+    "rate": 107.09,
+    "quantity": 2,
+    "date": "2025-01-21",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Curd",
+    "rate": 42.5,
+    "quantity": 3,
+    "date": "2025-01-21",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 115.65,
+    "quantity": 5,
+    "date": "2025-04-09",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Sunflower Oil",
+    "rate": 135.46,
+    "quantity": 4,
+    "date": "2025-04-09",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Wheat Flour",
+    "rate": 49.69,
+    "quantity": 5,
+    "date": "2025-01-13",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      5
+    ]
+  },
+  {
+    "productName": "Coconut Oil",
+    "rate": 116.66,
+    "quantity": 1,
+    "date": "2025-01-13",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      5
+    ]
+  },
+  {
+    "productName": "Coconut Oil",
+    "rate": 158.97,
+    "quantity": 3,
+    "date": "2025-02-11",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Banana",
+    "rate": 61.96,
+    "quantity": 3,
+    "date": "2025-02-11",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Paneer",
+    "rate": 162.11,
+    "quantity": 2,
+    "date": "2025-03-13",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Milk",
+    "rate": 51.73,
+    "quantity": 3,
+    "date": "2025-03-13",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Potato",
+    "rate": 34.64,
+    "quantity": 4,
+    "date": "2024-12-04",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      4,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Salt",
+    "rate": 11.08,
+    "quantity": 2,
+    "date": "2024-12-04",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      4,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Apple",
+    "rate": 108.73,
+    "quantity": 2,
+    "date": "2025-01-22",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Groundnut Oil",
+    "rate": 123.32,
+    "quantity": 4,
+    "date": "2025-01-22",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Orange",
+    "rate": 108.85,
+    "quantity": 2,
+    "date": "2025-03-15",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      3,
+      5,
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Groundnut Oil",
+    "rate": 114.63,
+    "quantity": 5,
+    "date": "2025-03-15",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      3,
+      5,
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 139.4,
+    "quantity": 3,
+    "date": "2025-03-29",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      2,
+      4,
+      5
+    ]
+  },
+  {
+    "productName": "Onion",
+    "rate": 33.73,
+    "quantity": 1,
+    "date": "2025-03-29",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      2,
+      4,
+      5
+    ]
+  },
+  {
+    "productName": "Curd",
+    "rate": 35.2,
+    "quantity": 5,
+    "date": "2025-02-09",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Butter",
+    "rate": 213.75,
+    "quantity": 4,
+    "date": "2025-02-09",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Onion",
+    "rate": 29.61,
+    "quantity": 2,
+    "date": "2025-01-05",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      4,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 133.15,
+    "quantity": 3,
+    "date": "2025-01-05",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      4,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Milk",
+    "rate": 59.92,
+    "quantity": 1,
+    "date": "2024-12-16",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      5,
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 85.12,
+    "quantity": 1,
+    "date": "2024-12-16",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      5,
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Apple",
+    "rate": 114.63,
+    "quantity": 4,
+    "date": "2025-02-21",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Sugar",
+    "rate": 38.82,
+    "quantity": 2,
+    "date": "2025-02-21",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Mango",
+    "rate": 117.05,
+    "quantity": 5,
+    "date": "2024-11-27",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "productName": "Orange",
+    "rate": 117.35,
+    "quantity": 4,
+    "date": "2024-11-27",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 106.08,
+    "quantity": 5,
+    "date": "2024-11-29",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Coffee Powder",
+    "rate": 197.43,
+    "quantity": 5,
+    "date": "2024-11-29",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Tea Powder",
+    "rate": 180.86,
+    "quantity": 3,
+    "date": "2025-02-19",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      2,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Butter",
+    "rate": 279.66,
+    "quantity": 1,
+    "date": "2025-02-19",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      2,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 121.74,
+    "quantity": 3,
+    "date": "2025-04-04",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      4,
+      5
+    ]
+  },
+  {
+    "productName": "Onion",
+    "rate": 20.99,
+    "quantity": 4,
+    "date": "2025-04-04",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      4,
+      5
+    ]
+  },
+  {
+    "productName": "Apple",
+    "rate": 167.83,
+    "quantity": 3,
+    "date": "2024-11-09",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Groundnut Oil",
+    "rate": 177.28,
+    "quantity": 1,
+    "date": "2024-11-09",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Sunflower Oil",
+    "rate": 194.64,
+    "quantity": 1,
+    "date": "2025-04-09",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Eggs",
+    "rate": 68.77,
+    "quantity": 1,
+    "date": "2025-04-09",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Orange",
+    "rate": 107.21,
+    "quantity": 2,
+    "date": "2024-12-08",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Butter",
+    "rate": 247.36,
+    "quantity": 5,
+    "date": "2024-12-08",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Wheat Flour",
+    "rate": 43.83,
+    "quantity": 2,
+    "date": "2025-03-14",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Toor Dal",
+    "rate": 105.32,
+    "quantity": 5,
+    "date": "2025-03-14",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Sunflower Oil",
+    "rate": 192.58,
+    "quantity": 5,
+    "date": "2024-12-23",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Eggs",
+    "rate": 71.79,
+    "quantity": 1,
+    "date": "2024-12-23",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Sugar",
+    "rate": 53.7,
+    "quantity": 1,
+    "date": "2024-11-10",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "productName": "Milk",
+    "rate": 41.96,
+    "quantity": 4,
+    "date": "2024-11-10",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 106.02,
+    "quantity": 5,
+    "date": "2025-02-13",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      4,
+      3,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Urad Dal",
+    "rate": 87.88,
+    "quantity": 5,
+    "date": "2025-02-13",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      4,
+      3,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Sugar",
+    "rate": 44.48,
+    "quantity": 5,
+    "date": "2024-11-22",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Toor Dal",
+    "rate": 92.0,
+    "quantity": 4,
+    "date": "2024-11-22",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Salt",
+    "rate": 11.46,
+    "quantity": 5,
+    "date": "2024-11-08",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      5,
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Butter",
+    "rate": 283.54,
+    "quantity": 4,
+    "date": "2024-11-08",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      5,
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Milk",
+    "rate": 44.21,
+    "quantity": 4,
+    "date": "2024-11-10",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Apple",
+    "rate": 120.43,
+    "quantity": 3,
+    "date": "2024-11-10",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Mango",
+    "rate": 140.03,
+    "quantity": 5,
+    "date": "2024-12-07",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Tea Powder",
+    "rate": 192.52,
+    "quantity": 1,
+    "date": "2024-12-07",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Paneer",
+    "rate": 145.19,
+    "quantity": 5,
+    "date": "2025-03-11",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      4,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Toor Dal",
+    "rate": 115.53,
+    "quantity": 1,
+    "date": "2025-03-11",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      4,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Coffee Powder",
+    "rate": 193.28,
+    "quantity": 2,
+    "date": "2025-01-10",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      4,
+      3,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Apple",
+    "rate": 118.19,
+    "quantity": 1,
+    "date": "2025-01-10",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      4,
+      3,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Milk",
+    "rate": 51.26,
+    "quantity": 4,
+    "date": "2024-12-15",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Urad Dal",
+    "rate": 114.21,
+    "quantity": 2,
+    "date": "2024-12-15",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 139.96,
+    "quantity": 1,
+    "date": "2025-02-08",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Potato",
+    "rate": 30.0,
+    "quantity": 1,
+    "date": "2025-02-08",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Coconut Oil",
+    "rate": 113.51,
+    "quantity": 4,
+    "date": "2024-10-27",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      5,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Banana",
+    "rate": 46.26,
+    "quantity": 5,
+    "date": "2024-10-27",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      5,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Potato",
+    "rate": 21.72,
+    "quantity": 3,
+    "date": "2025-01-19",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Apple",
+    "rate": 172.13,
+    "quantity": 3,
+    "date": "2025-01-19",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Tea Powder",
+    "rate": 229.36,
+    "quantity": 4,
+    "date": "2025-04-15",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      5,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Butter",
+    "rate": 278.64,
+    "quantity": 4,
+    "date": "2025-04-15",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      5,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Milk",
+    "rate": 55.81,
+    "quantity": 2,
+    "date": "2024-12-30",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      4,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Orange",
+    "rate": 92.73,
+    "quantity": 1,
+    "date": "2024-12-30",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      4,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Mango",
+    "rate": 100.41,
+    "quantity": 4,
+    "date": "2025-01-06",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      4,
+      3,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Salt",
+    "rate": 20.74,
+    "quantity": 2,
+    "date": "2025-01-06",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      4,
+      3,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Groundnut Oil",
+    "rate": 199.49,
+    "quantity": 5,
+    "date": "2025-02-06",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      4,
+      3,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Salt",
+    "rate": 18.53,
+    "quantity": 5,
+    "date": "2025-02-06",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      4,
+      3,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Toor Dal",
+    "rate": 121.66,
+    "quantity": 5,
+    "date": "2025-01-22",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Coconut Oil",
+    "rate": 92.6,
+    "quantity": 1,
+    "date": "2025-01-22",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Paneer",
+    "rate": 133.89,
+    "quantity": 1,
+    "date": "2024-12-09",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      4,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Curd",
+    "rate": 29.53,
+    "quantity": 5,
+    "date": "2024-12-09",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      4,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Sugar",
+    "rate": 47.15,
+    "quantity": 1,
+    "date": "2025-01-28",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      5,
+      4,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Coconut Oil",
+    "rate": 106.74,
+    "quantity": 4,
+    "date": "2025-01-28",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      5,
+      4,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Groundnut Oil",
+    "rate": 172.21,
+    "quantity": 5,
+    "date": "2025-04-03",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      5,
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Paneer",
+    "rate": 136.0,
+    "quantity": 4,
+    "date": "2025-04-03",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      5,
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Sunflower Oil",
+    "rate": 121.66,
+    "quantity": 2,
+    "date": "2025-03-18",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      3,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Coconut Oil",
+    "rate": 176.71,
+    "quantity": 5,
+    "date": "2025-03-18",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      3,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Toor Dal",
+    "rate": 107.49,
+    "quantity": 1,
+    "date": "2024-12-25",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Potato",
+    "rate": 31.49,
+    "quantity": 5,
+    "date": "2024-12-25",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 111.72,
+    "quantity": 1,
+    "date": "2025-03-14",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Milk",
+    "rate": 48.12,
+    "quantity": 4,
+    "date": "2025-03-14",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Toor Dal",
+    "rate": 101.01,
+    "quantity": 3,
+    "date": "2024-12-09",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      5,
+      2,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 82.17,
+    "quantity": 3,
+    "date": "2024-12-09",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      5,
+      2,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Salt",
+    "rate": 18.25,
+    "quantity": 3,
+    "date": "2025-03-28",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      2,
+      4,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Sunflower Oil",
+    "rate": 184.48,
+    "quantity": 1,
+    "date": "2025-03-28",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      2,
+      4,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Sunflower Oil",
+    "rate": 189.29,
+    "quantity": 3,
+    "date": "2025-03-18",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Wheat Flour",
+    "rate": 44.0,
+    "quantity": 2,
+    "date": "2025-03-18",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Toor Dal",
+    "rate": 114.82,
+    "quantity": 1,
+    "date": "2025-01-04",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      5,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Orange",
+    "rate": 107.8,
+    "quantity": 2,
+    "date": "2025-01-04",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      5,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Tea Powder",
+    "rate": 122.0,
+    "quantity": 3,
+    "date": "2024-11-05",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Orange",
+    "rate": 113.39,
+    "quantity": 4,
+    "date": "2024-11-05",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Eggs",
+    "rate": 71.38,
+    "quantity": 5,
+    "date": "2024-11-30",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Potato",
+    "rate": 34.44,
+    "quantity": 5,
+    "date": "2024-11-30",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Onion",
+    "rate": 29.01,
+    "quantity": 5,
+    "date": "2025-04-11",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Wheat Flour",
+    "rate": 42.01,
+    "quantity": 4,
+    "date": "2025-04-11",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Mango",
+    "rate": 133.97,
+    "quantity": 3,
+    "date": "2024-12-24",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Curd",
+    "rate": 32.12,
+    "quantity": 5,
+    "date": "2024-12-24",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Curd",
+    "rate": 29.8,
+    "quantity": 4,
+    "date": "2024-12-13",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Wheat Flour",
+    "rate": 56.51,
+    "quantity": 1,
+    "date": "2024-12-13",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Groundnut Oil",
+    "rate": 149.11,
+    "quantity": 1,
+    "date": "2024-11-06",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Coffee Powder",
+    "rate": 162.09,
+    "quantity": 3,
+    "date": "2024-11-06",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Coconut Oil",
+    "rate": 177.33,
+    "quantity": 4,
+    "date": "2024-12-29",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      5,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 84.64,
+    "quantity": 5,
+    "date": "2024-12-29",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      5,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Butter",
+    "rate": 195.58,
+    "quantity": 2,
+    "date": "2025-01-14",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Paneer",
+    "rate": 111.62,
+    "quantity": 3,
+    "date": "2025-01-14",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Salt",
+    "rate": 23.51,
+    "quantity": 3,
+    "date": "2025-02-01",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      4,
+      5
+    ]
+  },
+  {
+    "productName": "Orange",
+    "rate": 80.7,
+    "quantity": 4,
+    "date": "2025-02-01",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      4,
+      5
+    ]
+  },
+  {
+    "productName": "Coconut Oil",
+    "rate": 155.3,
+    "quantity": 5,
+    "date": "2024-11-28",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      5,
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Apple",
+    "rate": 169.39,
+    "quantity": 2,
+    "date": "2024-11-28",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      5,
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Mango",
+    "rate": 132.16,
+    "quantity": 5,
+    "date": "2025-02-27",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Butter",
+    "rate": 212.09,
+    "quantity": 5,
+    "date": "2025-02-27",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Paneer",
+    "rate": 124.22,
+    "quantity": 4,
+    "date": "2024-12-10",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      4,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Butter",
+    "rate": 236.77,
+    "quantity": 2,
+    "date": "2024-12-10",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      4,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Onion",
+    "rate": 37.95,
+    "quantity": 2,
+    "date": "2025-02-20",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Orange",
+    "rate": 87.73,
+    "quantity": 1,
+    "date": "2025-02-20",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Mango",
+    "rate": 138.83,
+    "quantity": 4,
+    "date": "2024-11-20",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      5,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Paneer",
+    "rate": 141.4,
+    "quantity": 4,
+    "date": "2024-11-20",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      5,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Tea Powder",
+    "rate": 228.41,
+    "quantity": 1,
+    "date": "2025-01-02",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Milk",
+    "rate": 48.03,
+    "quantity": 2,
+    "date": "2025-01-02",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Sugar",
+    "rate": 41.84,
+    "quantity": 4,
+    "date": "2025-04-07",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Mango",
+    "rate": 102.46,
+    "quantity": 4,
+    "date": "2025-04-07",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Potato",
+    "rate": 26.12,
+    "quantity": 3,
+    "date": "2025-02-12",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Urad Dal",
+    "rate": 106.63,
+    "quantity": 1,
+    "date": "2025-02-12",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Groundnut Oil",
+    "rate": 157.1,
+    "quantity": 1,
+    "date": "2025-03-30",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Onion",
+    "rate": 34.09,
+    "quantity": 5,
+    "date": "2025-03-30",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Urad Dal",
+    "rate": 94.55,
+    "quantity": 2,
+    "date": "2024-11-18",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      5,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 128.09,
+    "quantity": 3,
+    "date": "2024-11-18",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      5,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Onion",
+    "rate": 25.49,
+    "quantity": 5,
+    "date": "2025-02-26",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Potato",
+    "rate": 20.74,
+    "quantity": 4,
+    "date": "2025-02-26",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Coffee Powder",
+    "rate": 228.7,
+    "quantity": 3,
+    "date": "2025-02-01",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      2,
+      5,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Potato",
+    "rate": 26.71,
+    "quantity": 5,
+    "date": "2025-02-01",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      2,
+      5,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Wheat Flour",
+    "rate": 43.2,
+    "quantity": 1,
+    "date": "2025-02-22",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Sunflower Oil",
+    "rate": 182.89,
+    "quantity": 1,
+    "date": "2025-02-22",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Wheat Flour",
+    "rate": 50.33,
+    "quantity": 3,
+    "date": "2024-12-08",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      5
+    ]
+  },
+  {
+    "productName": "Milk",
+    "rate": 48.21,
+    "quantity": 3,
+    "date": "2024-12-08",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      5
+    ]
+  },
+  {
+    "productName": "Wheat Flour",
+    "rate": 34.43,
+    "quantity": 1,
+    "date": "2025-02-06",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 118.05,
+    "quantity": 4,
+    "date": "2025-02-06",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Coconut Oil",
+    "rate": 131.64,
+    "quantity": 4,
+    "date": "2024-10-30",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      4,
+      2,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Paneer",
+    "rate": 127.44,
+    "quantity": 4,
+    "date": "2024-10-30",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      4,
+      2,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Sunflower Oil",
+    "rate": 149.11,
+    "quantity": 3,
+    "date": "2024-12-31",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      5,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Butter",
+    "rate": 256.94,
+    "quantity": 2,
+    "date": "2024-12-31",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      5,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Orange",
+    "rate": 109.84,
+    "quantity": 5,
+    "date": "2024-11-28",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Mango",
+    "rate": 147.52,
+    "quantity": 1,
+    "date": "2024-11-28",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Coffee Powder",
+    "rate": 233.44,
+    "quantity": 5,
+    "date": "2025-01-07",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Tea Powder",
+    "rate": 223.37,
+    "quantity": 5,
+    "date": "2025-01-07",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Potato",
+    "rate": 23.46,
+    "quantity": 5,
+    "date": "2025-01-10",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Banana",
+    "rate": 53.75,
+    "quantity": 3,
+    "date": "2025-01-10",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Butter",
+    "rate": 230.66,
+    "quantity": 3,
+    "date": "2025-02-09",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Banana",
+    "rate": 53.62,
+    "quantity": 5,
+    "date": "2025-02-09",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Toor Dal",
+    "rate": 107.85,
+    "quantity": 3,
+    "date": "2025-03-15",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Sunflower Oil",
+    "rate": 135.12,
+    "quantity": 4,
+    "date": "2025-03-15",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Sugar",
+    "rate": 42.75,
+    "quantity": 3,
+    "date": "2024-12-27",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Milk",
+    "rate": 50.47,
+    "quantity": 4,
+    "date": "2024-12-27",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Banana",
+    "rate": 69.6,
+    "quantity": 5,
+    "date": "2024-12-19",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Potato",
+    "rate": 24.38,
+    "quantity": 4,
+    "date": "2024-12-19",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Urad Dal",
+    "rate": 81.58,
+    "quantity": 1,
+    "date": "2024-11-11",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      4,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Orange",
+    "rate": 97.97,
+    "quantity": 1,
+    "date": "2024-11-11",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      4,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Curd",
+    "rate": 32.06,
+    "quantity": 3,
+    "date": "2025-01-04",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      5,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Potato",
+    "rate": 33.03,
+    "quantity": 4,
+    "date": "2025-01-04",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      5,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Onion",
+    "rate": 27.83,
+    "quantity": 4,
+    "date": "2024-12-02",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Banana",
+    "rate": 66.18,
+    "quantity": 1,
+    "date": "2024-12-02",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Groundnut Oil",
+    "rate": 119.59,
+    "quantity": 2,
+    "date": "2024-10-28",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Coffee Powder",
+    "rate": 174.93,
+    "quantity": 1,
+    "date": "2024-10-28",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 85.46,
+    "quantity": 5,
+    "date": "2025-04-10",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      4,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Tea Powder",
+    "rate": 113.16,
+    "quantity": 2,
+    "date": "2025-04-10",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      4,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Sunflower Oil",
+    "rate": 198.16,
+    "quantity": 5,
+    "date": "2024-12-01",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      5,
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Apple",
+    "rate": 122.77,
+    "quantity": 4,
+    "date": "2024-12-01",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      5,
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Onion",
+    "rate": 20.55,
+    "quantity": 1,
+    "date": "2025-01-18",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Coffee Powder",
+    "rate": 196.23,
+    "quantity": 1,
+    "date": "2025-01-18",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Paneer",
+    "rate": 134.23,
+    "quantity": 3,
+    "date": "2024-10-26",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Wheat Flour",
+    "rate": 56.0,
+    "quantity": 5,
+    "date": "2024-10-26",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Eggs",
+    "rate": 81.96,
+    "quantity": 5,
+    "date": "2025-03-17",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      4,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Onion",
+    "rate": 31.08,
+    "quantity": 4,
+    "date": "2025-03-17",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      4,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Orange",
+    "rate": 105.7,
+    "quantity": 2,
+    "date": "2024-12-20",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Curd",
+    "rate": 32.0,
+    "quantity": 5,
+    "date": "2024-12-20",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Orange",
+    "rate": 106.9,
+    "quantity": 1,
+    "date": "2025-01-06",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 110.93,
+    "quantity": 5,
+    "date": "2025-01-06",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Milk",
+    "rate": 42.29,
+    "quantity": 3,
+    "date": "2025-03-09",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Coconut Oil",
+    "rate": 154.17,
+    "quantity": 3,
+    "date": "2025-03-09",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Toor Dal",
+    "rate": 122.04,
+    "quantity": 5,
+    "date": "2025-03-21",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Urad Dal",
+    "rate": 107.88,
+    "quantity": 5,
+    "date": "2025-03-21",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Onion",
+    "rate": 31.51,
+    "quantity": 4,
+    "date": "2025-01-09",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Sunflower Oil",
+    "rate": 124.89,
+    "quantity": 2,
+    "date": "2025-01-09",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Wheat Flour",
+    "rate": 56.48,
+    "quantity": 5,
+    "date": "2025-04-15",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Orange",
+    "rate": 112.28,
+    "quantity": 4,
+    "date": "2025-04-15",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Eggs",
+    "rate": 83.48,
+    "quantity": 5,
+    "date": "2025-01-09",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Curd",
+    "rate": 25.07,
+    "quantity": 4,
+    "date": "2025-01-09",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Mango",
+    "rate": 108.47,
+    "quantity": 5,
+    "date": "2025-01-11",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Curd",
+    "rate": 32.11,
+    "quantity": 2,
+    "date": "2025-01-11",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Mango",
+    "rate": 147.3,
+    "quantity": 3,
+    "date": "2024-11-14",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "productName": "Groundnut Oil",
+    "rate": 131.38,
+    "quantity": 1,
+    "date": "2024-11-14",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "productName": "Coffee Powder",
+    "rate": 210.36,
+    "quantity": 4,
+    "date": "2024-11-26",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      5,
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Banana",
+    "rate": 63.32,
+    "quantity": 1,
+    "date": "2024-11-26",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      5,
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Curd",
+    "rate": 36.6,
+    "quantity": 5,
+    "date": "2025-03-27",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      3,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Mango",
+    "rate": 148.35,
+    "quantity": 5,
+    "date": "2025-03-27",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      3,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Sugar",
+    "rate": 48.67,
+    "quantity": 5,
+    "date": "2024-11-04",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      5,
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Onion",
+    "rate": 37.54,
+    "quantity": 2,
+    "date": "2024-11-04",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      5,
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Orange",
+    "rate": 102.74,
+    "quantity": 4,
+    "date": "2025-02-20",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      5,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Tea Powder",
+    "rate": 105.22,
+    "quantity": 1,
+    "date": "2025-02-20",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      5,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Onion",
+    "rate": 25.7,
+    "quantity": 3,
+    "date": "2024-11-18",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      3,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Eggs",
+    "rate": 66.39,
+    "quantity": 5,
+    "date": "2024-11-18",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      3,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Wheat Flour",
+    "rate": 31.36,
+    "quantity": 2,
+    "date": "2025-04-14",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Urad Dal",
+    "rate": 117.97,
+    "quantity": 5,
+    "date": "2025-04-14",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Groundnut Oil",
+    "rate": 157.9,
+    "quantity": 5,
+    "date": "2025-01-29",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      4,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Coconut Oil",
+    "rate": 98.89,
+    "quantity": 1,
+    "date": "2025-01-29",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      4,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Paneer",
+    "rate": 153.35,
+    "quantity": 3,
+    "date": "2025-02-03",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      2,
+      4,
+      5
+    ]
+  },
+  {
+    "productName": "Potato",
+    "rate": 24.05,
+    "quantity": 3,
+    "date": "2025-02-03",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      2,
+      4,
+      5
+    ]
+  },
+  {
+    "productName": "Banana",
+    "rate": 55.82,
+    "quantity": 1,
+    "date": "2025-02-13",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Mango",
+    "rate": 148.21,
+    "quantity": 2,
+    "date": "2025-02-13",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 106.18,
+    "quantity": 4,
+    "date": "2025-01-27",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Onion",
+    "rate": 38.52,
+    "quantity": 3,
+    "date": "2025-01-27",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Milk",
+    "rate": 51.62,
+    "quantity": 5,
+    "date": "2025-02-11",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      3,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Onion",
+    "rate": 32.16,
+    "quantity": 5,
+    "date": "2025-02-11",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      3,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Mango",
+    "rate": 140.0,
+    "quantity": 3,
+    "date": "2025-03-26",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      2,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Sunflower Oil",
+    "rate": 138.67,
+    "quantity": 1,
+    "date": "2025-03-26",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      2,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Urad Dal",
+    "rate": 114.33,
+    "quantity": 1,
+    "date": "2025-03-17",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Salt",
+    "rate": 15.92,
+    "quantity": 1,
+    "date": "2025-03-17",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Banana",
+    "rate": 62.97,
+    "quantity": 2,
+    "date": "2025-03-21",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      5,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Curd",
+    "rate": 39.87,
+    "quantity": 4,
+    "date": "2025-03-21",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      5,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Orange",
+    "rate": 102.2,
+    "quantity": 1,
+    "date": "2025-01-15",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Toor Dal",
+    "rate": 104.42,
+    "quantity": 4,
+    "date": "2025-01-15",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Banana",
+    "rate": 43.06,
+    "quantity": 5,
+    "date": "2025-02-12",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      3,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Coconut Oil",
+    "rate": 146.35,
+    "quantity": 3,
+    "date": "2025-02-12",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      3,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Sunflower Oil",
+    "rate": 151.4,
+    "quantity": 5,
+    "date": "2025-01-06",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      5,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Wheat Flour",
+    "rate": 30.41,
+    "quantity": 4,
+    "date": "2025-01-06",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      5,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Potato",
+    "rate": 22.45,
+    "quantity": 5,
+    "date": "2024-11-21",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Sugar",
+    "rate": 52.07,
+    "quantity": 5,
+    "date": "2024-11-21",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Toor Dal",
+    "rate": 125.39,
+    "quantity": 3,
+    "date": "2025-01-04",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      5,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Paneer",
+    "rate": 112.5,
+    "quantity": 3,
+    "date": "2025-01-04",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      5,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Wheat Flour",
+    "rate": 47.03,
+    "quantity": 1,
+    "date": "2025-03-30",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Orange",
+    "rate": 103.22,
+    "quantity": 1,
+    "date": "2025-03-30",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Apple",
+    "rate": 155.76,
+    "quantity": 1,
+    "date": "2024-12-20",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      5,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 131.3,
+    "quantity": 3,
+    "date": "2024-12-20",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      5,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Onion",
+    "rate": 25.58,
+    "quantity": 2,
+    "date": "2025-03-11",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Butter",
+    "rate": 219.8,
+    "quantity": 1,
+    "date": "2025-03-11",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Sugar",
+    "rate": 35.14,
+    "quantity": 3,
+    "date": "2025-01-31",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Orange",
+    "rate": 102.56,
+    "quantity": 1,
+    "date": "2025-01-31",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Sunflower Oil",
+    "rate": 129.04,
+    "quantity": 3,
+    "date": "2024-11-22",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      3,
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Banana",
+    "rate": 42.51,
+    "quantity": 3,
+    "date": "2024-11-22",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      3,
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Groundnut Oil",
+    "rate": 118.68,
+    "quantity": 4,
+    "date": "2024-11-13",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Eggs",
+    "rate": 72.23,
+    "quantity": 2,
+    "date": "2024-11-13",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Paneer",
+    "rate": 154.72,
+    "quantity": 5,
+    "date": "2025-03-06",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      5,
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Apple",
+    "rate": 166.7,
+    "quantity": 5,
+    "date": "2025-03-06",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      5,
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Onion",
+    "rate": 22.78,
+    "quantity": 4,
+    "date": "2024-12-05",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Mango",
+    "rate": 119.61,
+    "quantity": 4,
+    "date": "2024-12-05",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Eggs",
+    "rate": 75.59,
+    "quantity": 2,
+    "date": "2024-12-23",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      2,
+      4,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Potato",
+    "rate": 23.36,
+    "quantity": 4,
+    "date": "2024-12-23",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      2,
+      4,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 111.29,
+    "quantity": 3,
+    "date": "2024-11-11",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Banana",
+    "rate": 51.13,
+    "quantity": 1,
+    "date": "2024-11-11",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Milk",
+    "rate": 55.64,
+    "quantity": 3,
+    "date": "2024-11-07",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      4,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Coconut Oil",
+    "rate": 95.55,
+    "quantity": 2,
+    "date": "2024-11-07",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      4,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Paneer",
+    "rate": 107.53,
+    "quantity": 4,
+    "date": "2025-02-20",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Butter",
+    "rate": 193.6,
+    "quantity": 4,
+    "date": "2025-02-20",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Urad Dal",
+    "rate": 97.65,
+    "quantity": 3,
+    "date": "2024-12-15",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Eggs",
+    "rate": 81.79,
+    "quantity": 1,
+    "date": "2024-12-15",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Urad Dal",
+    "rate": 87.98,
+    "quantity": 1,
+    "date": "2025-04-03",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Apple",
+    "rate": 120.18,
+    "quantity": 4,
+    "date": "2025-04-03",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Onion",
+    "rate": 28.89,
+    "quantity": 5,
+    "date": "2024-12-31",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      3,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Wheat Flour",
+    "rate": 54.68,
+    "quantity": 5,
+    "date": "2024-12-31",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      3,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Mango",
+    "rate": 101.05,
+    "quantity": 1,
+    "date": "2025-03-28",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      4,
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Sunflower Oil",
+    "rate": 189.46,
+    "quantity": 5,
+    "date": "2025-03-28",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      4,
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Apple",
+    "rate": 153.05,
+    "quantity": 2,
+    "date": "2025-01-07",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Onion",
+    "rate": 27.34,
+    "quantity": 3,
+    "date": "2025-01-07",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Toor Dal",
+    "rate": 120.64,
+    "quantity": 2,
+    "date": "2024-12-19",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      4,
+      5,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Salt",
+    "rate": 14.92,
+    "quantity": 5,
+    "date": "2024-12-19",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      4,
+      5,
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Paneer",
+    "rate": 119.0,
+    "quantity": 4,
+    "date": "2024-11-27",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Curd",
+    "rate": 32.87,
+    "quantity": 3,
+    "date": "2024-11-27",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Coconut Oil",
+    "rate": 158.16,
+    "quantity": 3,
+    "date": "2025-01-14",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Potato",
+    "rate": 29.67,
+    "quantity": 5,
+    "date": "2025-01-14",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 108.08,
+    "quantity": 3,
+    "date": "2025-01-03",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      4,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Potato",
+    "rate": 23.14,
+    "quantity": 4,
+    "date": "2025-01-03",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      4,
+      2,
+      5
+    ]
+  },
+  {
+    "productName": "Orange",
+    "rate": 85.17,
+    "quantity": 3,
+    "date": "2025-02-16",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      2,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Potato",
+    "rate": 31.16,
+    "quantity": 2,
+    "date": "2025-02-16",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      2,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Salt",
+    "rate": 14.47,
+    "quantity": 4,
+    "date": "2025-01-09",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      5,
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Coconut Oil",
+    "rate": 127.17,
+    "quantity": 2,
+    "date": "2025-01-09",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      5,
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 100.74,
+    "quantity": 5,
+    "date": "2025-01-12",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Wheat Flour",
+    "rate": 35.33,
+    "quantity": 2,
+    "date": "2025-01-12",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Apple",
+    "rate": 148.53,
+    "quantity": 3,
+    "date": "2024-12-09",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      3,
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Coconut Oil",
+    "rate": 126.1,
+    "quantity": 3,
+    "date": "2024-12-09",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      3,
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 88.56,
+    "quantity": 2,
+    "date": "2025-01-30",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Groundnut Oil",
+    "rate": 124.0,
+    "quantity": 5,
+    "date": "2025-01-30",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Coconut Oil",
+    "rate": 155.22,
+    "quantity": 1,
+    "date": "2025-03-16",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      4,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Coffee Powder",
+    "rate": 214.53,
+    "quantity": 4,
+    "date": "2025-03-16",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      4,
+      5,
+      3
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 138.33,
+    "quantity": 2,
+    "date": "2024-12-02",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      4,
+      5,
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Orange",
+    "rate": 86.99,
+    "quantity": 4,
+    "date": "2024-12-02",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      4,
+      5,
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Butter",
+    "rate": 203.81,
+    "quantity": 3,
+    "date": "2024-10-29",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      4,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Coconut Oil",
+    "rate": 93.84,
+    "quantity": 5,
+    "date": "2024-10-29",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      4,
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Sugar",
+    "rate": 45.95,
+    "quantity": 3,
+    "date": "2025-01-17",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Eggs",
+    "rate": 73.69,
+    "quantity": 4,
+    "date": "2025-01-17",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      3,
+      5
+    ]
+  },
+  {
+    "productName": "Sugar",
+    "rate": 53.76,
+    "quantity": 1,
+    "date": "2025-03-28",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      3,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Apple",
+    "rate": 118.83,
+    "quantity": 3,
+    "date": "2025-03-28",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      3,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Paneer",
+    "rate": 165.18,
+    "quantity": 5,
+    "date": "2024-11-27",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Mango",
+    "rate": 112.83,
+    "quantity": 1,
+    "date": "2024-11-27",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Paneer",
+    "rate": 158.46,
+    "quantity": 4,
+    "date": "2025-02-03",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Basmati Rice",
+    "rate": 125.28,
+    "quantity": 4,
+    "date": "2025-02-03",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      3,
+      2
+    ]
+  },
+  {
+    "productName": "Onion",
+    "rate": 36.57,
+    "quantity": 4,
+    "date": "2025-02-24",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      5,
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Coconut Oil",
+    "rate": 134.67,
+    "quantity": 5,
+    "date": "2025-02-24",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      3,
+      5,
+      4,
+      2
+    ]
+  },
+  {
+    "productName": "Salt",
+    "rate": 15.73,
+    "quantity": 1,
+    "date": "2024-12-28",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      5,
+      3,
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Mango",
+    "rate": 145.09,
+    "quantity": 3,
+    "date": "2024-12-28",
+    "roomId": 1,
+    "payerId": 4,
+    "splitUserIds": [
+      5,
+      3,
+      2,
+      4
+    ]
+  },
+  {
+    "productName": "Milk",
+    "rate": 43.8,
+    "quantity": 5,
+    "date": "2024-10-29",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Coffee Powder",
+    "rate": 157.28,
+    "quantity": 3,
+    "date": "2024-10-29",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      4,
+      3
+    ]
+  },
+  {
+    "productName": "Coconut Oil",
+    "rate": 131.15,
+    "quantity": 3,
+    "date": "2024-12-16",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Butter",
+    "rate": 216.71,
+    "quantity": 2,
+    "date": "2024-12-16",
+    "roomId": 1,
+    "payerId": 3,
+    "splitUserIds": [
+      2,
+      3
+    ]
+  },
+  {
+    "productName": "Wheat Flour",
+    "rate": 59.06,
+    "quantity": 1,
+    "date": "2025-02-05",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Butter",
+    "rate": 223.96,
+    "quantity": 2,
+    "date": "2025-02-05",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Groundnut Oil",
+    "rate": 205.38,
+    "quantity": 1,
+    "date": "2025-03-22",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      3,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Coffee Powder",
+    "rate": 216.88,
+    "quantity": 5,
+    "date": "2025-03-22",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      3,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Orange",
+    "rate": 100.61,
+    "quantity": 5,
+    "date": "2024-10-27",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Butter",
+    "rate": 245.03,
+    "quantity": 3,
+    "date": "2024-10-27",
+    "roomId": 1,
+    "payerId": 5,
+    "splitUserIds": [
+      5,
+      2
+    ]
+  },
+  {
+    "productName": "Groundnut Oil",
+    "rate": 206.84,
+    "quantity": 5,
+    "date": "2025-02-12",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      5,
+      4
+    ]
+  },
+  {
+    "productName": "Urad Dal",
+    "rate": 80.33,
+    "quantity": 2,
+    "date": "2025-02-12",
+    "roomId": 1,
+    "payerId": 2,
+    "splitUserIds": [
+      2,
+      5,
+      4
+    ]
+  }
+]

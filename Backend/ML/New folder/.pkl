@@ -1,0 +1,11 @@
+import pickle
+from association_model import ProductUserAssociation
+
+# Train and save the model
+model = ProductUserAssociation("data.json")
+
+# Save to pickle file
+with open("association_model.pkl", "wb") as f:
+    pickle.dump(model, f)
+
+print("✅ Model saved as 'association_model.pkl'")
