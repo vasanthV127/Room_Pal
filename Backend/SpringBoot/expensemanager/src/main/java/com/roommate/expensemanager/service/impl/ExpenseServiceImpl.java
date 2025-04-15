@@ -13,7 +13,9 @@ import com.roommate.expensemanager.repository.UserRepository;
 import com.roommate.expensemanager.service.ExpenseService;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @Service
@@ -101,13 +103,11 @@ public class ExpenseServiceImpl implements ExpenseService {
         return expenseRepository.findByPayerIdAndRoomId(userId, roomId).stream()
                 .map(expense -> {
                     ExpenseDto dto = ExpenseDto.fromEntity(expense);
-                    // Assume splitUserIds stored externally or via custom logic
-                    // For now, filter based on no debts created
                     return dto;
                 })
                 .filter(dto -> {
                     List<Debt> debts = debtRepository.findByExpenseId(dto.getId());
-                    return debts.isEmpty(); // Personal expense = no debts
+                    return debts.isEmpty();
                 })
                 .collect(Collectors.toList());
     }
@@ -134,5 +134,27 @@ public class ExpenseServiceImpl implements ExpenseService {
         return debtRepository.findByCreditorIdAndRoomId(userId, roomId).stream()
                 .map(DebtDto::fromEntity)
                 .collect(Collectors.toList());
+    }
+
+    @Override
+    public Map<String, Object> getPayerSuggestion(Long roomId) {
+        Room room = roomRepository.findById(roomId)
+                .orElseThrow(() -> new IllegalArgumentException("Room not found"));
+        List<User> users = room.getUsers();
+        Map<Long, Long> paymentCounts = users.stream()
+                .collect(Collectors.toMap(
+                        User::getId,
+                        user -> (long) expenseRepository.findByPayerIdAndRoomId(user.getId(), roomId).size()
+                ));
+        Long suggestedUserId = paymentCounts.entrySet().stream()
+                .min(Map.Entry.comparingByValue())
+                .map(Map.Entry::getKey)
+                .orElse(users.get(0).getId());
+        User suggestedUser = userRepository.findById(suggestedUserId)
+                .orElseThrow(() -> new IllegalArgumentException("User not found"));
+        Map<String, Object> response = new HashMap<>();
+        response.put("userId", suggestedUserId);
+        response.put("username", suggestedUser.getUsername());
+        return response;
     }
 }

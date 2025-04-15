@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/expenses")
@@ -27,7 +28,6 @@ public class ExpenseController {
         return ResponseEntity.ok(expenseService.getExpensesByRoom(roomId));
     }
 
-    // API 1: Personal expenses (self-buy)
     @GetMapping("/personal")
     public ResponseEntity<List<ExpenseDto>> getPersonalExpenses(
             @RequestParam Long userId,
@@ -36,7 +36,6 @@ public class ExpenseController {
         return ResponseEntity.ok(expenseService.getPersonalExpenses(userId, roomId));
     }
 
-    // API 2: Debts user needs to pay
     @GetMapping("/debts-to-pay")
     public ResponseEntity<List<DebtDto>> getDebtsToPay(
             @RequestParam Long userId,
@@ -45,12 +44,16 @@ public class ExpenseController {
         return ResponseEntity.ok(expenseService.getDebtsToPay(userId, roomId));
     }
 
-    // API 3: Debts owed to user
     @GetMapping("/debts-owed")
     public ResponseEntity<List<DebtDto>> getDebtsOwed(
             @RequestParam Long userId,
             @RequestParam Long roomId
     ) {
         return ResponseEntity.ok(expenseService.getDebtsOwed(userId, roomId));
+    }
+
+    @GetMapping("/payer-suggestion")
+    public ResponseEntity<Map<String, Object>> getPayerSuggestion(@RequestParam Long roomId) {
+        return ResponseEntity.ok(expenseService.getPayerSuggestion(roomId));
     }
 }
