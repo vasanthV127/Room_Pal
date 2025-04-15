@@ -85,6 +85,7 @@ function UsrHomeRP() {
               <a onClick={() => handleOptionClick("Manage Team")} href="#">
                 Manage Team
               </a>
+              <a href="https:///t.me/HOSTEL_ROOMMATE_HELPERBOT">Bot</a>
             </div>
           </div>
           {/* For Mobile */}
