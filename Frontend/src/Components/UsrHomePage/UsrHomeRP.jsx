@@ -13,6 +13,7 @@ import ManageTasks from "../ManageTasks/ManageTasks";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 import Notifications from "../Notification/Notifications";
+import LogoutIcon from "@mui/icons-material/Logout";
 
 function UsrHomeRP() {
   const [activePage, setActivePage] = useState("View Financial Expenses");
@@ -41,6 +42,9 @@ function UsrHomeRP() {
             </a>
             <a id="UsrHome-Profile-Icon" href="#">
               <PersonRoundedIcon style={{ fontSize: 30, color: "black" }} />
+            </a>
+            <a id="UsrHome-Logout-Icon" href="#">
+              <LogoutIcon style={{ fontSize: 30, color: "black" }} />
             </a>
           </div>
         </div>
