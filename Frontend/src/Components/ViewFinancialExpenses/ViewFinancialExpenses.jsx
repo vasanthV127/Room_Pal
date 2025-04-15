@@ -9,8 +9,8 @@ const ViewFinancialExpenses = () => {
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
 
-  const userId = localStorage.getItem("userId"); // e.g., "2" for Purushoth
-  const roomId = 1; // Room ID 1 (Flat 101)
+  const userId = localStorage.getItem("userId");
+  const roomId = 1;
 
   const getCategory = (productName) => {
     const categories = {
@@ -34,13 +34,11 @@ const ViewFinancialExpenses = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Fetch personal expenses
         const personalResponse = await axios.get(
           `http://192.168.137.1:8080/api/expenses/personal?userId=${userId}&roomId=${roomId}`
         );
         setPersonalExpenses(personalResponse.data);
 
-        // Fetch pending debts
         const debtsResponse = await axios.get(
           `http://192.168.137.1:8080/api/expenses/debts-to-pay?userId=${userId}&roomId=${roomId}`
         );
@@ -61,14 +59,12 @@ const ViewFinancialExpenses = () => {
     }
   }, [userId]);
 
-  // Pay debt
   const handlePayDebt = async (debtId) => {
     try {
       await axios.post("http://192.168.137.1:8080/api/debts/pay", { debtId });
       setPendingDebts(pendingDebts.filter((debt) => debt.id !== debtId));
       setSuccess("Debt paid successfully!");
       setError(null);
-      // Notify other components
       window.dispatchEvent(new CustomEvent("debtPaid", { detail: { debtId, userId, roomId } }));
       setTimeout(() => setSuccess(null), 3000);
     } catch (err) {
@@ -105,7 +101,7 @@ const ViewFinancialExpenses = () => {
               </div>
             </div>
             <div className="expense-amount">
-              ${(expense.rate * expense.quantity).toFixed(2)}
+              ₹{(expense.rate * expense.quantity).toFixed(2)}
             </div>
           </div>
         ))
@@ -129,7 +125,7 @@ const ViewFinancialExpenses = () => {
                 {new Date().toLocaleDateString()}
               </div>
             </div>
-            <div className="expense-amount">${debt.amount.toFixed(2)}</div>
+            <div className="expense-amount">₹{debt.amount.toFixed(2)}</div>
             <button
               className="pay-button"
               onClick={() => handlePayDebt(debt.id)}

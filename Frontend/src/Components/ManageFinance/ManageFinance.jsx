@@ -23,14 +23,13 @@ const ManageFinance = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const userId = localStorage.getItem("userId"); // e.g., "2" for Purushoth
-  const roomId = 1; // Room ID 1 (Flat 101)
-  const MONTHLY_BUDGET = { team: 1000, self: 250 }; // $
-  const DAILY_BUDGET = { team: 33.33, self: 10 }; // $
+  const userId = localStorage.getItem("userId");
+  const roomId = 1;
+  const MONTHLY_BUDGET = { team: 8000, self: 1000 }; // ₹
+  const DAILY_BUDGET = { team: 666, self: 100 }; // ₹
 
   const fetchData = async () => {
     try {
-      // Fetch room members
       const membersResponse = await axios.get(
         `http://192.168.137.1:8080/api/rooms/${roomId}/members`
       );
@@ -40,7 +39,6 @@ const ManageFinance = () => {
       const memberResponses = await Promise.all(memberPromises);
       const roommatesData = memberResponses.map((res) => res.data);
 
-      // Fetch debts
       const debtsOwedResponse = await axios.get(
         `http://192.168.137.1:8080/api/expenses/debts-owed?userId=${userId}&roomId=${roomId}`
       );
@@ -48,7 +46,6 @@ const ManageFinance = () => {
         `http://192.168.137.1:8080/api/expenses/debts-to-pay?userId=${userId}&roomId=${roomId}`
       );
 
-      // Fetch expense summary
       const summaryResponse = await axios.get(
         `http://192.168.137.1:8080/api/expenses/summary?roomId=${roomId}&userId=${userId}&period=${period}`
       );
@@ -72,7 +69,6 @@ const ManageFinance = () => {
       setLoading(false);
     }
 
-    // Listen for debt payments
     const handleDebtPaid = () => {
       if (userId) {
         fetchData();
@@ -85,7 +81,6 @@ const ManageFinance = () => {
     };
   }, [userId, period]);
 
-  // Calculate net balance
   const getNetBalance = (roommateId) => {
     const owedToUser = debtsOwed
       .filter((debt) => debt.debtorId === roommateId)
@@ -96,7 +91,6 @@ const ManageFinance = () => {
     return (owedToUser - owedByUser).toFixed(2);
   };
 
-  // Calculate savings
   const getSavings = () => {
     const teamTotal = expenseSummary.reduce((sum, entry) => sum + entry.team, 0);
     const selfTotal = expenseSummary.reduce((sum, entry) => sum + entry.self, 0);
@@ -105,33 +99,31 @@ const ManageFinance = () => {
     return { team: teamSavings.toFixed(2), self: selfSavings.toFixed(2) };
   };
 
-  // Check thresholds
   const getThresholdStatus = () => {
     const selfTotal = expenseSummary.reduce((sum, entry) => sum + entry.self, 0);
     if (period === "month" && selfTotal > MONTHLY_BUDGET.self) {
-      return `Warning: Monthly spending ($${selfTotal.toFixed(
+      return `Warning: Monthly spending (₹${selfTotal.toFixed(
         2
-      )}) exceeds limit ($${MONTHLY_BUDGET.self})!`;
+      )}) exceeds limit (₹${MONTHLY_BUDGET.self})!`;
     }
     if (period === "day" && selfTotal > DAILY_BUDGET.self) {
-      return `Warning: Daily spending ($${selfTotal.toFixed(
+      return `Warning: Daily spending (₹${selfTotal.toFixed(
         2
-      )}) exceeds limit ($${DAILY_BUDGET.self})!`;
+      )}) exceeds limit (₹${DAILY_BUDGET.self})!`;
     }
     return "";
   };
 
-  // Chart data
   const chartData = {
     labels: expenseSummary.map((entry) => entry.period),
     datasets: [
       {
-        label: "Team Expenses ($)",
+        label: "Team Expenses (₹)",
         data: expenseSummary.map((entry) => entry.team),
         backgroundColor: "rgba(40, 167, 69, 0.6)",
       },
       {
-        label: "Your Expenses ($)",
+        label: "Your Expenses (₹)",
         data: expenseSummary.map((entry) => entry.self),
         backgroundColor: "rgba(251, 191, 36, 0.6)",
       },
@@ -145,7 +137,7 @@ const ManageFinance = () => {
       title: { display: true, text: `Expenses by ${period}` },
     },
     scales: {
-      y: { beginAtZero: true, title: { display: true, text: "Amount ($)" } },
+      y: { beginAtZero: true, title: { display: true, text: "Amount (₹)" } },
     },
   };
 
@@ -164,7 +156,6 @@ const ManageFinance = () => {
     <div className="manage-finances">
       <h2>Manage Finances</h2>
 
-      {/* Period Filter */}
       <div className="filter">
         <label>View by: </label>
         <select value={period} onChange={(e) => setPeriod(e.target.value)}>
@@ -174,12 +165,10 @@ const ManageFinance = () => {
         </select>
       </div>
 
-      {/* Threshold Alert */}
       {thresholdStatus && (
         <div className="threshold-alert">{thresholdStatus}</div>
       )}
 
-      {/* Summary Cards */}
       <div className="finance-summary">
         {roommates.length === 0 ? (
           <p>No roommates found.</p>
@@ -194,7 +183,7 @@ const ManageFinance = () => {
                     balance >= 0 ? "amount-positive" : "amount-negative"
                   }`}
                 >
-                  ${Math.abs(balance)}
+                  ₹{Math.abs(balance)}
                 </p>
               </div>
             );
@@ -202,12 +191,11 @@ const ManageFinance = () => {
         )}
       </div>
 
-      {/* Visual Cards */}
       <div className="visual-cards">
         <div className="visual-card">
           <h3>Total Team Expenses</h3>
           <p>
-            $
+            ₹
             {expenseSummary
               .reduce((sum, entry) => sum + entry.team, 0)
               .toFixed(2)}
@@ -216,7 +204,7 @@ const ManageFinance = () => {
         <div className="visual-card">
           <h3>Your Expenses</h3>
           <p>
-            $
+            ₹
             {expenseSummary
               .reduce((sum, entry) => sum + entry.self, 0)
               .toFixed(2)}
@@ -225,18 +213,17 @@ const ManageFinance = () => {
         <div className="visual-card">
           <h3>Team Savings</h3>
           <p className={savings.team >= 0 ? "amount-positive" : "amount-negative"}>
-            ${Math.abs(savings.team)}
+            ₹{Math.abs(savings.team)}
           </p>
         </div>
         <div className="visual-card">
           <h3>Your Savings</h3>
           <p className={savings.self >= 0 ? "amount-positive" : "amount-negative"}>
-            ${Math.abs(savings.self)}
+            ₹{Math.abs(savings.self)}
           </p>
         </div>
       </div>
 
-      {/* Bar Chart */}
       <div className="chart-container">
         <Bar data={chartData} options={chartOptions} />
       </div>

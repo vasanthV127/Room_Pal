@@ -15,6 +15,17 @@ const UploadBills = () => {
     payerId: "",
     splitUserIds: [],
   });
+  const [uploadedProducts, setUploadedProducts] = useState([]);
+  const [predictedSplits, setPredictedSplits] = useState({});
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [editExpense, setEditExpense] = useState({
+    productName: "",
+    rate: "",
+    quantity: 1,
+    date: new Date().toISOString().split("T")[0],
+    payerId: "",
+    splitUserIds: [],
+  });
   const [error, setError] = useState("");
   const userId = localStorage.getItem("userId"); // e.g., "2" for Purushoth
   const roomId = 1; // Room ID 1 (Flat 101)
@@ -31,7 +42,8 @@ const UploadBills = () => {
           axios.get(`http://192.168.137.1:8080/api/users/${id}`)
         );
         const memberResponses = await Promise.all(memberPromises);
-        setRoommates(memberResponses.map((res) => res.data));
+        const roommatesData = memberResponses.map((res) => res.data);
+        setRoommates(roommatesData);
 
         // Fetch suggested payer
         const suggestionResponse = await axios.get(
@@ -39,7 +51,7 @@ const UploadBills = () => {
         );
         setSuggestedPayer(suggestionResponse.data);
 
-        // Set default payer
+        // Set default payer for manual form
         setManualExpense((prev) => ({
           ...prev,
           payerId: suggestionResponse.data.userId.toString(),
@@ -52,7 +64,7 @@ const UploadBills = () => {
     fetchData();
   }, []);
 
-  // Handle file upload to Python service
+  // Handle file upload to Flask
   const handleFileUpload = async () => {
     if (!file) {
       setError("Please select a file.");
@@ -62,24 +74,17 @@ const UploadBills = () => {
     formData.append("receipt", file);
     try {
       const response = await axios.post(
-        "http://localhost:5000/analyze-receipt",
+        " http://172.19.111.210:5000/analyze-receipt",
         formData,
         { headers: { "Content-Type": "multipart/form-data" } }
       );
-      const expenseData = response.data;
-      const expense = {
-        productName: expenseData.productName,
-        rate: expenseData.rate,
-        quantity: expenseData.quantity,
-        date: expenseData.date,
-        roomId,
-        payerId: suggestedPayer.userId,
-        splitUserIds: [expenseData.payerId], // Default to self
-      };
-      await submitExpense(expense);
+      const { products, predictions } = response.data;
+      setUploadedProducts(products);
+      setPredictedSplits(predictions);
       setFile(null);
+      setError("");
     } catch (err) {
-      setError("Failed to process receipt.");
+      setError("Failed to process receipt: " + (err.response?.data?.error || err.message));
     }
   };
 
@@ -89,7 +94,7 @@ const UploadBills = () => {
     setManualExpense((prev) => ({ ...prev, [name]: value }));
   };
 
-  // Handle split user selection
+  // Handle split user selection for manual form
   const handleSplitUserToggle = (userId) => {
     setManualExpense((prev) => {
       const splitUserIds = prev.splitUserIds.includes(userId)
@@ -99,7 +104,23 @@ const UploadBills = () => {
     });
   };
 
-  // Submit expense to backend
+  // Handle edit form changes
+  const handleEditChange = (e) => {
+    const { name, value } = e.target;
+    setEditExpense((prev) => ({ ...prev, [name]: value }));
+  };
+
+  // Handle split user selection for edit form
+  const handleEditSplitUserToggle = (userId) => {
+    setEditExpense((prev) => {
+      const splitUserIds = prev.splitUserIds.includes(userId)
+        ? prev.splitUserIds.filter((id) => id !== userId)
+        : [...prev.splitUserIds, userId];
+      return { ...prev, splitUserIds };
+    });
+  };
+
+  // Submit expense to Spring backend
   const submitExpense = async (expense) => {
     try {
       const response = await axios.post(
@@ -122,16 +143,10 @@ const UploadBills = () => {
         ...prev.slice(0, 4), // Keep last 5
       ]);
       setError("");
-      setManualExpense({
-        productName: "",
-        rate: "",
-        quantity: 1,
-        date: new Date().toISOString().split("T")[0],
-        payerId: suggestedPayer?.userId.toString() || "",
-        splitUserIds: roommates.map((r) => r.id),
-      });
+      return response.data;
     } catch (err) {
-      setError("Failed to save expense.");
+      setError("Failed to save expense: " + (err.response?.data?.message || err.message));
+      throw err;
     }
   };
 
@@ -154,6 +169,70 @@ const UploadBills = () => {
         : [parseInt(manualExpense.payerId)],
     };
     await submitExpense(expense);
+    setManualExpense({
+      productName: "",
+      rate: "",
+      quantity: 1,
+      date: new Date().toISOString().split("T")[0],
+      payerId: suggestedPayer?.userId.toString() || "",
+      splitUserIds: roommates.map((r) => r.id),
+    });
+  };
+
+  // Select product to edit
+  const handleSelectProduct = (product) => {
+    const predictedPayerId = Object.keys(predictedSplits).find((userId) =>
+      predictedSplits[userId].some((p) => p.product === product.productName)
+    ) || suggestedPayer?.userId.toString() || "";
+    const predictedSplitUserIds = Object.keys(predictedSplits)
+      .filter((userId) =>
+        predictedSplits[userId].some((p) => p.product === product.productName)
+      )
+      .map(Number);
+    setSelectedProduct(product);
+    setEditExpense({
+      productName: product.productName,
+      rate: product.rate.toString(),
+      quantity: Math.round(product.quantity),
+      date: new Date().toISOString().split("T")[0],
+      payerId: predictedPayerId,
+      splitUserIds: predictedSplitUserIds.length
+        ? predictedSplitUserIds
+        : roommates.map((r) => r.id),
+    });
+  };
+
+  // Submit edited product
+  const handleEditSubmit = async (e) => {
+    e.preventDefault();
+    if (!editExpense.productName || !editExpense.rate || !editExpense.payerId) {
+      setError("Please fill all required fields for the product.");
+      return;
+    }
+    const expense = {
+      productName: editExpense.productName,
+      rate: parseFloat(editExpense.rate),
+      quantity: parseInt(editExpense.quantity),
+      date: editExpense.date,
+      roomId,
+      payerId: parseInt(editExpense.payerId),
+      splitUserIds: editExpense.splitUserIds.length
+        ? editExpense.splitUserIds.map(Number)
+        : [parseInt(editExpense.payerId)],
+    };
+    await submitExpense(expense);
+    setUploadedProducts((prev) =>
+      prev.filter((p) => p.productName !== expense.productName)
+    );
+    setSelectedProduct(null);
+    setEditExpense({
+      productName: "",
+      rate: "",
+      quantity: 1,
+      date: new Date().toISOString().split("T")[0],
+      payerId: "",
+      splitUserIds: [],
+    });
   };
 
   return (
@@ -192,6 +271,129 @@ const UploadBills = () => {
           )}
         </div>
 
+        {/* Uploaded Products */}
+        {uploadedProducts.length > 0 && (
+  <div className="uploaded-products">
+    <h3>Extracted Products</h3>
+    <div className="products-grid">
+      {uploadedProducts.map((product, index) => (
+        <div key={index} className="product-card">
+          <div className="product-details">
+            <div className="product-name">{product.productName}</div>
+            <div className="product-info">
+              Amount: ₹{product.amount.toFixed(2)} | Rate: ₹{product.rate.toFixed(2)} | Quantity: {product.quantity}
+            </div>
+            <div className="product-prediction">
+              Predicted Payer: {roommates.find((r) => r.id === parseInt(Object.keys(predictedSplits).find((userId) => predictedSplits[userId].some((p) => p.product === product.productName))))?.username || "None"}
+              <br />
+              Split With: {Object.keys(predictedSplits)
+                .filter((userId) => predictedSplits[userId].some((p) => p.product === product.productName))
+                .map((userId) => roommates.find((r) => r.id === parseInt(userId))?.username)
+                .filter(Boolean)
+                .join(", ") || "None"}
+            </div>
+          </div>
+          <button
+            className="edit-btn"
+            onClick={() => handleSelectProduct(product)}
+          >
+            Edit
+          </button>
+        </div>
+      ))}
+    </div>
+  </div>
+)}
+
+        {/* Edit Product Form */}
+        {selectedProduct && (
+          <div className="edit-form">
+            <h3>Edit Product: {selectedProduct.productName}</h3>
+            <form onSubmit={handleEditSubmit} className="manual-form">
+              <div className="form-group">
+                <label>Product Name</label>
+                <input
+                  type="text"
+                  name="productName"
+                  value={editExpense.productName}
+                  onChange={handleEditChange}
+                  placeholder="e.g., Mango"
+                />
+              </div>
+              <div className="form-group">
+                <label>Rate (₹)</label>
+                <input
+                  type="number"
+                  name="rate"
+                  value={editExpense.rate}
+                  onChange={handleEditChange}
+                  placeholder="e.g., 120.76"
+                  step="0.01"
+                />
+              </div>
+              <div className="form-group">
+                <label>Quantity</label>
+                <input
+                  type="number"
+                  name="quantity"
+                  value={editExpense.quantity}
+                  onChange={handleEditChange}
+                  min="1"
+                />
+              </div>
+              <div className="form-group">
+                <label>Date</label>
+                <input
+                  type="date"
+                  name="date"
+                  value={editExpense.date}
+                  onChange={handleEditChange}
+                />
+              </div>
+              <div className="form-group">
+                <label>Payer</label>
+                <select
+                  name="payerId"
+                  value={editExpense.payerId}
+                  onChange={handleEditChange}
+                >
+                  <option value="">Select Payer</option>
+                  {roommates.map((user) => (
+                    <option key={user.id} value={user.id}>
+                      {user.username}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div className="form-group">
+                <label>Split With</label>
+                <div className="split-users">
+                  {roommates.map((user) => (
+                    <label key={user.id} className="split-checkbox">
+                      <input
+                        type="checkbox"
+                        checked={editExpense.splitUserIds.includes(user.id)}
+                        onChange={() => handleEditSplitUserToggle(user.id)}
+                      />
+                      {user.username}
+                    </label>
+                  ))}
+                </div>
+              </div>
+              <button type="submit" className="submit-btn">
+                Submit Expense
+              </button>
+              <button
+                type="button"
+                className="cancel-btn"
+                onClick={() => setSelectedProduct(null)}
+              >
+                Cancel
+              </button>
+            </form>
+          </div>
+        )}
+
         {/* Manual Entry Form */}
         <h3>Manual Entry</h3>
         <form onSubmit={handleManualSubmit} className="manual-form">
@@ -206,7 +408,7 @@ const UploadBills = () => {
             />
           </div>
           <div className="form-group">
-            <label>Rate ($)</label>
+            <label>Rate (₹)</label>
             <input
               type="number"
               name="rate"
@@ -288,7 +490,7 @@ const UploadBills = () => {
                     {expense.splitUsernames}
                   </div>
                   <div className="bill-amount">
-                    ${expense.amount.toFixed(2)} | {expense.date}
+                  ₹{expense.amount.toFixed(2)} | {expense.date}
                   </div>
                 </div>
               </div>

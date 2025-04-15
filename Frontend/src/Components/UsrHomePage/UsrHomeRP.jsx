@@ -18,6 +18,7 @@ import LoginMain from "../LoginPageRoomPal/LoginMain";
 import ManageTeam from "../TeamManagement/ManageTeam";
 
 function UsrHomeRP() {
+  const name = localStorage.getItem("username");
   const [activePage, setActivePage] = useState("View Financial Expenses");
   const handleOptionClick = (page) => {
     setActivePage(page);
@@ -36,6 +37,7 @@ function UsrHomeRP() {
             id="UsrHome-Col-2"
             className="col-6  d-flex justify-content-end align-items-center  pe-md-5"
           >
+            <h4>Welcome {name}</h4>
             <a id="UsrHome-Notifications-Icon" href="#">
               <NotificationsNoneRoundedIcon
                 onClick={() => handleOptionClick("Notifications")}
