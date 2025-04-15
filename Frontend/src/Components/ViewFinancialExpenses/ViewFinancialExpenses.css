@@ -15,7 +15,8 @@ h2 {
   padding: 10px;
 }
 
-.expense-item {
+.expense-item,
+.debt-item {
   display: flex;
   align-items: center;
   padding: 15px;
@@ -48,6 +49,30 @@ h2 {
 .expense-amount {
   font-weight: bold;
   color: #333;
+  margin-right: 10px;
+}
+
+.pay-button {
+  padding: 8px 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pay-button:hover {
+  background-color: #218838;
+}
+
+.success {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 /* Optional: Improve spacing for empty state or error */

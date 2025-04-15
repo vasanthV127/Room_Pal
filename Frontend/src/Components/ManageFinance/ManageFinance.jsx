@@ -28,49 +28,61 @@ const ManageFinance = () => {
   const MONTHLY_BUDGET = { team: 1000, self: 250 }; // $
   const DAILY_BUDGET = { team: 33.33, self: 10 }; // $
 
+  const fetchData = async () => {
+    try {
+      // Fetch room members
+      const membersResponse = await axios.get(
+        `http://192.168.137.1:8080/api/rooms/${roomId}/members`
+      );
+      const memberPromises = membersResponse.data
+        .filter((id) => id !== parseInt(userId))
+        .map((id) => axios.get(`http://192.168.137.1:8080/api/users/${id}`));
+      const memberResponses = await Promise.all(memberPromises);
+      const roommatesData = memberResponses.map((res) => res.data);
+
+      // Fetch debts
+      const debtsOwedResponse = await axios.get(
+        `http://192.168.137.1:8080/api/expenses/debts-owed?userId=${userId}&roomId=${roomId}`
+      );
+      const debtsToPayResponse = await axios.get(
+        `http://192.168.137.1:8080/api/expenses/debts-to-pay?userId=${userId}&roomId=${roomId}`
+      );
+
+      // Fetch expense summary
+      const summaryResponse = await axios.get(
+        `http://192.168.137.1:8080/api/expenses/summary?roomId=${roomId}&userId=${userId}&period=${period}`
+      );
+
+      setRoommates(roommatesData);
+      setDebtsOwed(debtsOwedResponse.data);
+      setDebtsToPay(debtsToPayResponse.data);
+      setExpenseSummary(summaryResponse.data);
+      setLoading(false);
+    } catch (err) {
+      setError("Failed to load data: " + (err.response?.data?.message || err.message));
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        // Fetch room members
-        const membersResponse = await axios.get(
-          `http://192.168.137.1:8080/api/rooms/${roomId}/members`
-        );
-        const memberPromises = membersResponse.data
-          .filter((id) => id !== parseInt(userId))
-          .map((id) => axios.get(`http://192.168.137.1:8080/api/users/${id}`));
-        const memberResponses = await Promise.all(memberPromises);
-        const roommatesData = memberResponses.map((res) => res.data);
-
-        // Fetch debts
-        const debtsOwedResponse = await axios.get(
-          `http://192.168.137.1:8080/api/expenses/debts-owed?userId=${userId}&roomId=${roomId}`
-        );
-        const debtsToPayResponse = await axios.get(
-          `http://192.168.137.1:8080/api/expenses/debts-to-pay?userId=${userId}&roomId=${roomId}`
-        );
-
-        // Fetch expense summary
-        const summaryResponse = await axios.get(
-          `http://192.168.137.1:8080/api/expenses/summary?roomId=${roomId}&userId=${userId}&period=${period}`
-        );
-
-        setRoommates(roommatesData);
-        setDebtsOwed(debtsOwedResponse.data);
-        setDebtsToPay(debtsToPayResponse.data);
-        setExpenseSummary(summaryResponse.data);
-        setLoading(false);
-      } catch (err) {
-        setError("Failed to load data. Please try again.");
-        setLoading(false);
-      }
-    };
-
     if (userId) {
       fetchData();
     } else {
       setError("Please log in to view finances.");
       setLoading(false);
     }
+
+    // Listen for debt payments
+    const handleDebtPaid = () => {
+      if (userId) {
+        fetchData();
+      }
+    };
+    window.addEventListener("debtPaid", handleDebtPaid);
+
+    return () => {
+      window.removeEventListener("debtPaid", handleDebtPaid);
+    };
   }, [userId, period]);
 
   // Calculate net balance

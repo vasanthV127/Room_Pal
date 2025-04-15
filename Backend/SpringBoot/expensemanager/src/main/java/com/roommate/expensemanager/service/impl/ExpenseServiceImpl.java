@@ -120,6 +120,7 @@ public class ExpenseServiceImpl implements ExpenseService {
                 .orElseThrow(() -> new IllegalArgumentException("User not found"));
 
         return debtRepository.findByDebtorIdAndRoomId(userId, roomId).stream()
+                .filter(debt -> "pending".equals(debt.getStatus()))
                 .map(DebtDto::fromEntity)
                 .collect(Collectors.toList());
     }
@@ -132,6 +133,7 @@ public class ExpenseServiceImpl implements ExpenseService {
                 .orElseThrow(() -> new IllegalArgumentException("User not found"));
 
         return debtRepository.findByCreditorIdAndRoomId(userId, roomId).stream()
+                .filter(debt -> "pending".equals(debt.getStatus()))
                 .map(DebtDto::fromEntity)
                 .collect(Collectors.toList());
     }

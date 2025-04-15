@@ -47,7 +47,7 @@ const AccessComunityForum = () => {
       }
 
       try {
-        const response = await fetch('http://127.0.0.1:5000/login', {
+        const response = await fetch('http://172.19.111.210:5000/login', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ username, password: 'pass' }),
@@ -89,7 +89,7 @@ const AccessComunityForum = () => {
 
   const fetchForumData = async () => {
     try {
-      const response = await fetch(`http://127.0.0.1:5000/forum?session_id=${sessionId}`, {
+      const response = await fetch(`http://172.19.111.210:5000/forum?session_id=${sessionId}`, {
         credentials: 'include',
       });
       const data = await response.json();
@@ -123,7 +123,7 @@ const AccessComunityForum = () => {
   // Handle logout
   const handleLogout = async () => {
     try {
-      await fetch('http://127.0.0.1:5000/logout', {
+      await fetch('http://172.19.111.210:5000/logout', {
         method: 'POST',
         credentials: 'include',
       });
@@ -145,7 +145,7 @@ const AccessComunityForum = () => {
     if (!newMessage.trim()) return;
 
     try {
-      const response = await fetch(`http://127.0.0.1:5000/forum?session_id=${sessionId}`, {
+      const response = await fetch(`http://172.19.111.210:5000/forum?session_id=${sessionId}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: newMessage }),
@@ -167,7 +167,7 @@ const AccessComunityForum = () => {
   const handleVote = async (vote) => {
     if (poll && poll.votes && !poll.votes[currentUser]) {
       try {
-        const response = await fetch(`http://127.0.0.1:5000/forum?session_id=${sessionId}`, {
+        const response = await fetch(`http://172.19.111.210:5000/forum?session_id=${sessionId}`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ vote }),
