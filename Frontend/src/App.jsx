@@ -10,6 +10,7 @@ import ManageTasks from "./Components/ManageTasks/ManageTasks";
 import LoginMain from "./Components/LoginPageRoomPal/LoginMain";
 
 import UsrHomeRP from "./Components/UsrHomePage/UsrHomeRP";
+import Notifications from "./Components/Notification/Notifications";
 
 function App() {
   const [activeView, setActiveView] = useState("expenses");
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<LoginMain />} />
         <Route path="/dashboard" element={<UsrHomeRP />} />
         <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/n" element={<Notifications/>} />
       </Routes>
     </BrowserRouter>
   );

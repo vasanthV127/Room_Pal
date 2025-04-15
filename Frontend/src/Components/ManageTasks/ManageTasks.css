@@ -2,16 +2,23 @@
   padding: 20px 0;
 }
 
-/* Ensure input and button alignment on smaller screens */
 @media (max-width: 768px) {
   .manage-tasks .row > div {
     margin-bottom: 16px;
   }
 }
 
-/* Adjust card spacing on tablets */
 @media (max-width: 992px) {
   .manage-tasks .col-sm-6 {
     margin-bottom: 16px;
   }
+}
+
+.task-section {
+  margin-bottom: 40px;
+}
+
+.task-section h5 {
+  font-size: 20px;
+  color: #1F2937;
 }
