@@ -36,7 +36,6 @@ function UsrHomeRP() {
             id="UsrHome-Col-2"
             className="col-6  d-flex justify-content-end align-items-center  pe-md-5"
           >
-            <h4 id="">Welcome{localstorage.getItem("username")}</h4>
             <a id="UsrHome-Notifications-Icon" href="#">
               <NotificationsNoneRoundedIcon
                 onClick={() => handleOptionClick("Notifications")}
