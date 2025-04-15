@@ -45,7 +45,7 @@ function UsrHomeRP() {
             <a id="UsrHome-Profile-Icon" href="#">
               <PersonRoundedIcon style={{ fontSize: 30, color: "black" }} />
             </a>
-            <a id="UsrHome-Logout-Icon" href="#">
+            <a id="UsrHome-Logout-Icon" href={{ LoginMain }}>
               <LogoutIcon style={{ fontSize: 30, color: "black" }} />
             </a>
           </div>
