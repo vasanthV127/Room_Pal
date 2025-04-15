@@ -110,3 +110,6 @@ h3 {
     flex: 1 1 100%;
   }
 }
+#ManageTeamFont {
+  font-family: "Poppins", serif;
+}

@@ -15,6 +15,7 @@ import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 import Notifications from "../Notification/Notifications";
 import LogoutIcon from "@mui/icons-material/Logout";
 import LoginMain from "../LoginPageRoomPal/LoginMain";
+import ManageTeam from "../TeamManagement/ManageTeam";
 
 function UsrHomeRP() {
   const [activePage, setActivePage] = useState("View Financial Expenses");
@@ -81,6 +82,9 @@ function UsrHomeRP() {
               <a onClick={() => handleOptionClick("Manage Tasks")} href="#">
                 Manage Tasks
               </a>
+              <a onClick={() => handleOptionClick("Manage Team")} href="#">
+                Manage Team
+              </a>
             </div>
           </div>
           {/* For Mobile */}
@@ -141,6 +145,9 @@ function UsrHomeRP() {
                 <a onClick={() => handleOptionClick("Manage Tasks")} href="#">
                   Manage Tasks
                 </a>
+                <a onClick={() => handleOptionClick("Manage Team")} href="#">
+                  Manage Team
+                </a>
               </div>
             </div>
           </div>
@@ -158,6 +165,7 @@ function UsrHomeRP() {
             {activePage === "View Discussion Forum" && <AccessComunityForum />}
             {activePage === "Upload Bills" && <UploadBills />}
             {activePage === "Manage Tasks" && <ManageTasks />}
+            {activePage === "Manage Team" && <ManageTeam />}
             {activePage === "Notifications" && <Notifications />}
             {activePage === "Profile" && <h1>Profile Page</h1>}
           </div>
