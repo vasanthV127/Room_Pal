@@ -9,4 +9,7 @@ public interface RoomService {
     RoomDto joinRoom(String inviteCode, String username);
     RoomDto addUserToRoom(Long roomId, String username);
     List<Long> getRoomMembers(Long roomId);
+    RoomDto updateRoom(Long roomId, RoomDto roomDto);
+    RoomDto removeUserFromRoom(Long roomId, Long userId);
+    RoomDto getRoom(Long roomId);
 }

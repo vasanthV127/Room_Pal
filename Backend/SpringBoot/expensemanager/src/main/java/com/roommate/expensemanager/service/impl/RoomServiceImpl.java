@@ -8,14 +8,12 @@ import com.roommate.expensemanager.model.User;
 import com.roommate.expensemanager.repository.RoomRepository;
 import com.roommate.expensemanager.repository.UserRepository;
 import com.roommate.expensemanager.service.RoomService;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.security.SecureRandom;
 import java.util.List;
 
 @Service
-
 public class RoomServiceImpl implements RoomService {
     private final RoomRepository roomRepository;
     private final UserRepository userRepository;
@@ -80,6 +78,39 @@ public class RoomServiceImpl implements RoomService {
         return room.getMembers().stream()
                 .map(User::getId)
                 .toList();
+    }
+
+    @Override
+    public RoomDto updateRoom(Long roomId, RoomDto roomDto) {
+        Room room = roomRepository.findById(roomId)
+                .orElseThrow(() -> new RoomNotFoundException("Room not found: " + roomId));
+        room.setName(roomDto.getName());
+        room = roomRepository.save(room);
+        return RoomDto.fromEntity(room);
+    }
+
+    @Override
+    public RoomDto removeUserFromRoom(Long roomId, Long userId) {
+        Room room = roomRepository.findById(roomId)
+                .orElseThrow(() -> new RoomNotFoundException("Room not found: " + roomId));
+        User user = userRepository.findById(userId)
+                .orElseThrow(() -> new UserNotFoundException("User not found: " + userId));
+
+        if (room.getMembers().contains(user)) {
+            room.getMembers().remove(user);
+            user.getRooms().remove(room);
+            roomRepository.save(room);
+            userRepository.save(user);
+        }
+
+        return RoomDto.fromEntity(room);
+    }
+
+    @Override
+    public RoomDto getRoom(Long roomId) {
+        Room room = roomRepository.findById(roomId)
+                .orElseThrow(() -> new RoomNotFoundException("Room not found: " + roomId));
+        return RoomDto.fromEntity(room);
     }
 
     private String generateUniqueInviteCode() {

@@ -11,6 +11,7 @@ import LoginMain from "./Components/LoginPageRoomPal/LoginMain";
 
 import UsrHomeRP from "./Components/UsrHomePage/UsrHomeRP";
 import Notifications from "./Components/Notification/Notifications";
+import ManageTeam from "./Components/TeamManagement/ManageTeam";
 
 function App() {
   const [activeView, setActiveView] = useState("expenses");
@@ -21,7 +22,8 @@ function App() {
         <Route path="/" element={<LoginMain />} />
         <Route path="/dashboard" element={<UsrHomeRP />} />
         <Route path="*" element={<Navigate to="/" />} />
-        <Route path="/n" element={<Notifications/>} />
+        <Route path="/n" element={<ManageTeam/>} />
+        
       </Routes>
     </BrowserRouter>
   );

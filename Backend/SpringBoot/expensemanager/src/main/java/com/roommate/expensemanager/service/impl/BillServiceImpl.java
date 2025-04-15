@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-@RequiredArgsConstructor
+
 public class BillServiceImpl implements BillService {
     private final BillRepository billRepository;
     private final BillItemRepository billItemRepository;

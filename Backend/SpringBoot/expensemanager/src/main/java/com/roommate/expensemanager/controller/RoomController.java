@@ -2,7 +2,6 @@ package com.roommate.expensemanager.controller;
 
 import com.roommate.expensemanager.dto.RoomDto;
 import com.roommate.expensemanager.service.RoomService;
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,13 +9,13 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/rooms")
-
 public class RoomController {
     private final RoomService roomService;
 
     public RoomController(RoomService roomService) {
         this.roomService = roomService;
     }
+
     @PostMapping
     public ResponseEntity<RoomDto> createRoom(@RequestBody RoomDto roomDto) {
         return ResponseEntity.ok(roomService.createRoom(roomDto));
@@ -39,5 +38,24 @@ public class RoomController {
     @GetMapping("/{id}/members")
     public ResponseEntity<List<Long>> getRoomMembers(@PathVariable Long id) {
         return ResponseEntity.ok(roomService.getRoomMembers(id));
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<RoomDto> updateRoom(
+            @PathVariable Long id,
+            @RequestBody RoomDto roomDto) {
+        return ResponseEntity.ok(roomService.updateRoom(id, roomDto));
+    }
+
+    @DeleteMapping("/{id}/members/{userId}")
+    public ResponseEntity<RoomDto> removeUserFromRoom(
+            @PathVariable Long id,
+            @PathVariable Long userId) {
+        return ResponseEntity.ok(roomService.removeUserFromRoom(id, userId));
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<RoomDto> getRoom(@PathVariable Long id) {
+        return ResponseEntity.ok(roomService.getRoom(id));
     }
 }
